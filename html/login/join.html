@@ -91,16 +91,34 @@
         </dl>
       </fieldset>
 
+      <div class="line"></div>
+
       <fieldset class="user_info">
         <legend class="hidden">개인 정보</legend>
         <dl>
-          <dt><label for="userEmail">인증메일</label></dt>
-          <dd class="input_area">
+          <dt><label for="userEmail">이메일 인증</label></dt>
+          <dd class="input_area email_area">
             <div>
               <input type="email" required id="email" name="email" value="" placeholder="이메일을 입력해주세요." />
             </div>
           </dd>
+          <dd>
+            <button type="button" class="certiButton" id="certi" name="certi"> 인증요청 </button>
+          </dd>
           <dd class="confirm_text">가입하신 인증 메일 주소를 꼭 기억해주세요.</dd>
+        </dl>
+
+        <dl>
+          <dt>인증번호 입력</dt>
+          <dd class="input_area email_area">
+            <div>
+              <input type="text" required id="email_certi" name="email_certi" value="" placeholder="인증번호를 입력해주세요." />
+            </div>
+          </dd>
+          <dd>
+            <button type="button" class="certiButton" id="certi" name="certi"> 인증하기 </button>
+          </dd>
+          <dd class="confirm_text">인증이 완료되었습니다.</dd>
         </dl>
       </fieldset>
       

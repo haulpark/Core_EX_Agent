@@ -113,6 +113,23 @@ h1{
 	width:47%;
 }
 
+.line{
+	width:100%; height:5px;
+	background-color: #eee;
+}
+
+.user_info{margin-top: 30px;}
+/* ----------------------- */
+/* email_certi */
+
+.email_area{float:left; width:80%; height:40px;}
+
+.certiButton {
+	float:right; width:18%; height:40px;
+}
+
+
+
 /* ----------------------- */
 
 .confirm_text {
