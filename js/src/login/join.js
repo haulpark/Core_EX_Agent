@@ -2,8 +2,8 @@
 
 (function($){
 
-	var userId = $('#userId');
-	userId.on('blur', function(e){
+	var CN = $('#companyName');
+	CN.on('blur', function(e){
 		e.preventDefault();
 
 		var rel = $(this).val();
@@ -15,15 +15,15 @@
 		if(rel == ""){
 			dl.addClass('error');
 			dl.removeClass('success');
-			conT.text('가입 후 본인인증이 필요한 이메일만 가능합니다.');
+			conT.text('회사명을 입력해주세요.');
 		}else if( !relTest ){
 			dl.addClass('error');
 			dl.removeClass('success');
-			conT.text('5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.');
+			conT.text('영문/숫자만 입력 가능합니다.');
 		}else{
 			dl.addClass('success');
 			dl.removeClass('error');
-			conT.text('사용할 수 있는 아이디입니다.');
+			conT.text('입력된 형식이 올바릅니다.');
 		}
 	});
 
@@ -83,7 +83,7 @@
 		}
 	});
 
-// 핀 번호 -----------------------------------------------
+// 핀 번호 ----------------------------------------------- 안 됌
 
 
 var pinResult;
@@ -95,18 +95,18 @@ userPin.on('blur', function(e){
 	var rel = $(this).val();
 	pinResult = rel;
 
-	var ck  = /^[0-9]*$/; 
+	var ck  = /^[0-9]{4}$/;
 	var relTest = ck.test( rel );
 	
 	var dl = $(this).parents('dl');
 	var conDt = $(this).parents('dd').eq(0).next('.confirm_text');
 
-	if( rel.length <= 4 ){
-		dl.addClass('error').removeClass('success');
-		conDt.text('4자리 숫자를 입력해주세요.');
-	}else{
+	if( rel !== ck ){
 		dl.addClass('success').removeClass('error');
 		conDt.text('핀 번호가 입력되었습니다.');
+	}else{
+		dl.addClass('error').removeClass('success');
+		conDt.text('4자리 숫자를 입력해주세요.');
 	}
 
 });
@@ -129,6 +129,33 @@ userPin2.on('blur', function(e){
 	}
 });
 
+// 핀 번호 -----------------------------------------------
+var userEm = $('#email');
+userEm.on('blur', function(e){
+	e.preventDefault();
+
+	var rel = $(this).val();
+	var ck  = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+	var relTest = ck.test( rel );
+	var dl  =  $(this).parents('dl');
+	var conT   = $('.confirm_text');
+
+	if(rel == ""){
+		dl.addClass('error');
+		dl.removeClass('success');
+		conT.text('가입 후 인증이 필요한 이메일만 가능합니다.');
+	}else if( !relTest ){
+		dl.addClass('error');
+		dl.removeClass('success');
+		conT.text('5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.');
+	}else{
+		dl.addClass('success');
+		dl.removeClass('error');
+		conT.text('이메일 형식이 올바릅니다.');
+	}
+});
+
+// 회원가입 후 페이지 이동 -----------------------------------------------
 	$('[type="submit"]').on('click', function(e){
 		e.preventDefault();
 	
@@ -136,6 +163,6 @@ userPin2.on('blur', function(e){
 
 	});
 
-	// 회원가입 후 페이지 이동 -----------------------------------------------
+
 
 })(jQuery);

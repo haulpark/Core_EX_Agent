@@ -113,22 +113,6 @@ h1{
 	width:47%;
 }
 
-.email_side{
-	float:left;
-	height:50px;
-	line-height: 50px;
-	text-align: center;
-	width:6%;}
-
-.emailBox{
-	float:right;
-	width:47%;}
-
-#email{
-	width:100%; height:50px;
-	border:1px solid #ccc;
-}
-
 /* ----------------------- */
 
 .confirm_text {
