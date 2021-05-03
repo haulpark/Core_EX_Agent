@@ -165,3 +165,22 @@ h2{font-family:paybooc-B; font-size:14pt;}
 
   .con_content{width:1200px; margin:auto;}
 
+  .panel-t{width:100%; height:30px;}
+  .panel-t > ul{width:100%; height:100%;}
+  .panel-t > ul > li {float:left; text-align: center; line-height:15px; font-size:12pt;}
+  .panel-t > ul > li:nth-child(1){width:10%;}
+  .panel-t > ul > li:nth-child(2){width:50%;}
+  .panel-t > ul > li:nth-child(3){width:10%;}
+  .panel-t > ul > li:nth-child(4){width:10%;}
+  .panel-t > ul > li:nth-child(5){width:10%;}
+  .panel-t > ul > li:nth-child(6){width:10%;}
+
+  .panel-heading{padding:0; height:50px;}
+  .panel-title > ul{width:100%; margin:0; padding:0; }
+  .panel-title > ul > li{float:left; height:100%; line-height:50px; text-align: center;}
+  .panel-title > ul > li:nth-child(1){width:10%;}
+  .panel-title > ul > li:nth-child(2){width:50%;}
+  .panel-title > ul > li:nth-child(3){width:10%;}
+  .panel-title > ul > li:nth-child(4){width:10%;}
+  .panel-title > ul > li:nth-child(5){width:10%;}
+  .panel-title > ul > li:nth-child(6){width:10%;}
