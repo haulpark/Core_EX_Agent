@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximun-scale=3.0, minimum-scale=0.5">
+
+<link rel="stylesheet" href="../../css/base/reset.css">
+<link rel="stylesheet" href="../../css/base/common.css">
+
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="../../css/src/main/mypage.css">
+
+<!--[if IE]>
+<script src="./ie/html5shive/dist/html5shive.min.js"></script>
+<script src="./ie/pie/PIE.js"></script>
+<script src="./ie/respond/dist/respond.min.js"></script>
+<![endif] -->
+
+<title> Core EX Agent </title>
+</head>
+<body>
+<!-- layout -->
+<div id="wrap">
+  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
+  <header id="headBox">
+    <h1>
+      <div class="logo"></div>
+      <span>Core EX Agent</span>
+    </h1>
+
+    <nav id="gnb">
+      <ul>
+        <li><a href="./main.html">메인</a></li>
+        <li><a href="./deal.html">내역</a></li>
+        <li><a href="./wallet.html">지갑</a></li>
+        <li><a href="./api.html">API</a></li>
+        <li><a href="./mypage.html">마이페이지</a></li>
+        <li><a href="./store.html">상품소개</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =-=-=-=-=-=-=-=-=-=-= section#viewBox =-=-=-=-=-=-=-=-=-=-= -->
+  <div class="content">
+    <div class="menuBox">
+      <dl class="tabs">
+        <dt>마이페이지</dt>
+        <dd class="tab-link current" id="tab_menu_1" data-tab="tab-1"><span>기본등록정보</span></dd>
+        <dd class="tab-link" id="tab_menu_2" data-tab="tab-2"><span>거래등록정보</span></dd>
+        <dd class="tab-link" id="tab_menu_3" data-tab="tab-3"><span>상품구매내역</span></dd>
+        <dd class="tab-link" id="tab_menu_4" data-tab="tab-4"><span>소명자료요청</span></dd>
+        <dd class="tab-link" id="tab_menu_5" data-tab="tab-5"><span>정산요청</span></dd>
+        <dd class="tab-link" id="tab_menu_6" data-tab="tab-6"><span>상담내역</span></dd>
+      </dl>
+    </div>
+
+    <div class="viewBox">
+      <!-- ========= tab-1 : 기본등록정보 ========= -->
+      <div id="tab-1" class="tab-content current">
+        <h2>기본등록정보</h2>
+        <div class="title_line"></div>
+
+        <div class="myinfoBox">
+          <table class="my_info_table">
+            <tbody>
+              <tr>
+                <th>회사명</th>
+                <td>달빛소프트</td>
+              </tr>
+              <tr>
+                <th>회사 ID</th>
+                <td>dalbit0208</td>
+              </tr>
+              <tr>
+                <th>비밀번호</th>
+                <td>*******</td>
+              </tr>
+              <tr>
+                <th>PIN 번호</th>
+                <td>****</td>
+              </tr>
+              <tr>
+                <th>이메일</th>
+                <td>dalbit2021@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button class="resetBtn">수정</button>
+        </div>
+      </div>
+
+
+      <!-- ========= tab-2 : 거래등록정보 ========= -->
+      <div id="tab-2" class="tab-content">
+        <h2>거래등록정보</h2>
+        <div class="title_line"></div>
+
+        <div class="myinfoBox">
+          <table class="my_info_table">
+            <tbody>
+              <tr>
+                <th>회사명</th>
+                <td>달빛소프트</td>
+              </tr>
+              <tr>
+                <th>주 거래코인</th>
+                <td>CRE</td>
+              </tr>
+              <tr>
+                <th>지갑주소</th>
+                <td>0x89E32B280B430D51</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <!-- ========= tab-3 : 상품구매내역 ========= -->
+      <div id="tab-3" class="tab-content">
+        <h2>상품구매내역</h2>
+        <div class="title_line"></div>
+
+        
+
+      </div>
+
+
+      <!-- ========= tab-4 : 소명자료요청 ========= -->
+      <div id="tab-4" class="tab-content">
+        <h2>소명자료요청</h2>
+        <div class="title_line"></div>
+
+        <div class="exBox">
+          <div class="ex_date">
+            <span>기간설정</span>
+            <div class="ex_input_date"><input type="date"> &#126; <input type="date"></div>
+          </div>
+          
+          <div class="ex_btn">
+            <button type="button">조회</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ========= tab-5 : 정산요청 ========= -->
+      <div id="tab-5" class="tab-content">
+        <h2>정산요청</h2>
+        <div class="title_line"></div>
+      </div>
+
+
+      <!-- ========= tab-6 : 상담내역 ========= -->
+      <div id="tab-6" class="tab-content">
+        <h2>상담내역</h2>
+        <div class="title_line"></div>
+
+        <div class="con_content">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    
+            <h4 class="panel-t">
+              <ul>
+                <li>순번</li>
+                <li>내용</li>
+                <li>문의일자</li>
+                <li>담당자</li>
+                <li>답변시간</li>
+                <li>처리결과</li>
+              </ul>
+            </h4>
+            
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <ul>
+                    <li>5</li>
+                    <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">다음은 무엇입니까?</a></li>
+                    <li>21-05-01</li>
+                    <li>심예지</li>
+                    <li>21-05-02</li>
+                    <li>답변완료</li>
+                  </ul>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+    
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <ul>
+                    <li>4</li>
+                    <li><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">다음은 무엇입니까?</a></li>
+                    <li>21-04-29</li>
+                    <li>김금자</li>
+                    <li>21-05-01</li>
+                    <li>답변완료</li>
+                  </ul>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+    
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <ul>
+                    <li>3</li>
+                    <li><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">다음은 무엇입니까?</a></li>
+                    <li>21-04-20</li>
+                    <li>박고은</li>
+                    <li>21-04-21</li>
+                    <li>답변완료</li>
+                  </ul>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+    
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                  <ul>
+                    <li>2</li>
+                    <li><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">다음은 무엇입니까?</a></li>
+                    <li>21-04-10</li>
+                    <li>모정민</li>
+                    <li>21-04-12</li>
+                    <li>답변완료</li>
+                  </ul>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+    
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headinsFive">
+                <h4 class="panel-title">
+                  <ul>
+                    <li>1</li>
+                    <li><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">다음은 무엇입니까?</a></li>
+                    <li>21-04-01</li>
+                    <li>유하늘</li>
+                    <li>21-04-02</li>
+                    <li>답변완료</li>
+                  </ul>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinsFive">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="p_indicator">
+            <ul>
+              <li><a href="#">&#60;&#60;</a></li>
+              <li><a href="#">&#60;</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">&#62;</a></li>
+              <li><a href="#">&#62;&#62;</a></li>
+            </ul>
+          </div>    
+    
+             
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--script -->
+<script src="../../js/base/jquery-3.5.1.min.js"></script>
+<script src="../../js/base/jquery-ui.min.js"></script>
+
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+<script src="../../js/src/main/mypage.js"></script>
+</body>
+</html>
