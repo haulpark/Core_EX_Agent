@@ -1,0 +1,260 @@
+/* bank.css */
+
+#wrap{width:1250px; height:auto; padding:25px 0; box-sizing: border-box; overflow: hidden;}
+
+  h2{font-family:paybooc-B; font-size:12pt;}
+  .title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
+
+
+  .main_title{
+    position: absolute; top:0; right:0; left:0; bottom:0;
+    width:600px; height:420px; margin:auto;
+  }
+
+/* ========== #accNum_msg (계좌 1원 메시지) ============= */
+#accNum_msg{
+  display:none;
+  position: absolute; z-index:1001;
+  width:100%; height:720px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 200px 5%; box-sizing: border-box;
+}
+
+.msg{
+  width:400px; height:350px; margin:auto;
+  background-color: #fff;
+  padding:30px; box-sizing: border-box;
+}
+
+.msg_close{
+  position: absolute; z-index: 1001;
+  top:220px; right:36%; 
+  width:24px; height:24px;
+  background-color: transparent;
+  background-image: url(../../../img/bank_img/close.png);
+  background-size: contain;
+}
+
+.check_img{
+  width:30px; height:30px;
+  margin:auto; margin-top: 45px;
+  background-image: url(../../../img/icons/check.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+}
+
+.check_msg{width:auto; height:auto; text-align: center;}
+.check_msg > .check_title{font-size:1.1rem;}
+.check_msg > .check_contents{font-size:1rem;}
+
+
+/* ========== #bankBox ============= */
+#bankBox{
+  display:none;
+  position: absolute; z-index: 1000;
+  width:100%; height:720px;
+  background: rgba(0, 0, 0, 0.4);
+  padding:30px 50px; box-sizing: border-box;
+}
+
+  .bank{
+    width:400px; height:100%; 
+    top:0; right:0; left:0; bottom:0; margin:auto;
+    background-color: #fff;
+    padding:50px 20px; box-sizing: border-box;
+  }
+
+  .close{
+    position: absolute; z-index: 1001;
+    top:6%; right:36%; 
+    width:24px; height:24px;
+    background-color: transparent;
+    background-image: url(../../../img/bank_img/close.png);
+    background-size: contain;}
+
+  .tab{
+    width:280px; height:36px;
+    margin:auto; 
+  }
+
+  .tab li {
+    float:left; 
+    width:140px; height:36px; text-align: center;
+    background-color: #E6E6E6; line-height: 36px;
+    font-size:0.9rem;
+  }
+
+  .tab li.current {background-color: #4694D1; color:#fff;}
+
+  .tab_content{
+    display:none;
+    width:100%; height:auto;
+    margin-top: 20px;
+    padding:0 30px; box-sizing: border-box;
+  }
+
+  .tab_content.current{
+    display:block;
+  }
+
+  .tab_content ul{width:300px; height:100%;}
+  .tab_content ul li {float:left; width:150px; height:30px;}
+  .tab_content ul li dl {width:100%; height:100%;}
+  .tab_content ul li dl dt{float:left; margin-left: 10%; width:20%;}
+  .tab_content ul li dl dt .bank_img{
+    margin-top: 1px;
+    width:18px; height:18px; 
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  .tab_content ul li dl dd{float:left; width:70%; font-size:0.9rem;}
+
+/* =================================== tab 1 (은행) 이미지 =================================== */
+  #tab1 ul li:nth-child(1) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_1.png);}
+  #tab1 ul li:nth-child(2) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_1.png);}
+  #tab1 ul li:nth-child(3) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_2.png);}
+  #tab1 ul li:nth-child(4) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_14.png);}
+  #tab1 ul li:nth-child(5) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_21.png);}
+  #tab1 ul li:nth-child(6) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_28.png);}
+  #tab1 ul li:nth-child(7) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_27.png);}
+  #tab1 ul li:nth-child(8) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_16.png);}
+  #tab1 ul li:nth-child(9) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_3.png);}
+  #tab1 ul li:nth-child(10) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_29.png);}
+
+  #tab1 ul li:nth-child(11) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_4.png);}
+  #tab1 ul li:nth-child(12) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_17.png);}
+  #tab1 ul li:nth-child(13) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_5.png);}
+  #tab1 ul li:nth-child(14) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_7.png);}
+  #tab1 ul li:nth-child(15) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_19.png);}
+  #tab1 ul li:nth-child(16) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_18.png);}
+  #tab1 ul li:nth-child(17) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_7.png);}
+  #tab1 ul li:nth-child(18) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_19.png);}
+  #tab1 ul li:nth-child(19) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_30.png);}
+  #tab1 ul li:nth-child(20) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_20.png);}
+
+  #tab1 ul li:nth-child(21) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_8.png);}
+  #tab1 ul li:nth-child(22) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_21.png);}
+  #tab1 ul li:nth-child(23) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_9.png);}
+  #tab1 ul li:nth-child(24) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_22.png);}
+  #tab1 ul li:nth-child(25) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_10.png);}
+  #tab1 ul li:nth-child(26) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_23.png);}
+  #tab1 ul li:nth-child(27) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_15.png);}
+  #tab1 ul li:nth-child(28) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_24.png);}
+  #tab1 ul li:nth-child(29) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_11.png);}
+  #tab1 ul li:nth-child(30) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_25.png);}
+  #tab1 ul li:nth-child(31) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_12.png);}
+  #tab1 ul li:nth-child(32) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_26.png);}
+  #tab1 ul li:nth-child(33) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_13.png);}
+  #tab1 ul li:nth-child(34) dl dt .bank_img{background-image: url(../../../img/bank_img/bank_13.png);}
+
+
+/* =================================== tab 2 (증권) 이미지 =================================== */
+  #tab2 ul li:nth-child(1) dl dt .bank_img{background-image: url(../../../img/stock_img/sh.png);}
+  #tab2 ul li:nth-child(2) dl dt .bank_img{background-image: url(../../../img/stock_img/kb-1.png);}
+  #tab2 ul li:nth-child(3) dl dt .bank_img{background-image: url(../../../img/stock_img/mras.png);}
+  #tab2 ul li:nth-child(4) dl dt .bank_img{background-image: url(../../../img/stock_img/mrtz.png);}
+  #tab2 ul li:nth-child(5) dl dt .bank_img{background-image: url(../../../img/stock_img/ds.png);}
+  #tab2 ul li:nth-child(6) dl dt .bank_img{background-image: url(../../../img/stock_img/bk.png);}
+  #tab2 ul li:nth-child(7) dl dt .bank_img{background-image: url(../../../img/stock_img/ss.png);}
+  #tab2 ul li:nth-child(8) dl dt .bank_img{background-image: url(../../../img/stock_img/sy.png);}
+  #tab2 ul li:nth-child(9) dl dt .bank_img{background-image: url(../../../img/stock_img/sk.png);}
+  #tab2 ul li:nth-child(10) dl dt .bank_img{background-image: url(../../../img/stock_img/yat.png);}
+
+  #tab2 ul li:nth-child(11) dl dt .bank_img{background-image: url(../../../img/stock_img/yj.png);}
+  #tab2 ul li:nth-child(12) dl dt .bank_img{background-image: url(../../../img/stock_img/ebest.png);}
+  #tab2 ul li:nth-child(13) dl dt .bank_img{background-image: url(../../../img/stock_img/kp.png);}
+  #tab2 ul li:nth-child(14) dl dt .bank_img{background-image: url(../../../img/stock_img/cape.png);}
+  #tab2 ul li:nth-child(15) dl dt .bank_img{background-image: url(../../../img/stock_img/ku.png);}
+  #tab2 ul li:nth-child(16) dl dt .bank_img{background-image: url(../../../img/stock_img/toss.png);}
+  #tab2 ul li:nth-child(17) dl dt .bank_img{background-image: url(../../../img/stock_img/fs.png);}
+  #tab2 ul li:nth-child(18) dl dt .bank_img{background-image: url(../../../img/stock_img/hana.png);}
+  #tab2 ul li:nth-child(19) dl dt .bank_img{background-image: url(../../../img/stock_img/hi.png);}
+  #tab2 ul li:nth-child(20) dl dt .bank_img{background-image: url(../../../img/stock_img/hk.png);}
+
+  #tab2 ul li:nth-child(21) dl dt .bank_img{background-image: url(../../../img/stock_img/hh.png);}
+  #tab2 ul li:nth-child(22) dl dt .bank_img{background-image: url(../../../img/stock_img/hd.png);}
+  #tab2 ul li:nth-child(23) dl dt .bank_img{background-image: url(../../../img/stock_img/bnk.png);}
+  #tab2 ul li:nth-child(24) dl dt .bank_img{background-image: url(../../../img/stock_img/db.png);}
+  #tab2 ul li:nth-child(25) dl dt .bank_img{background-image: url(../../../img/stock_img/ibk.png);}
+  #tab2 ul li:nth-child(26) dl dt .bank_img{background-image: url(../../../img/stock_img/kb.png);}
+  #tab2 ul li:nth-child(27) dl dt .bank_img{background-image: url(../../../img/stock_img/ktb.png);}
+  #tab2 ul li:nth-child(28) dl dt .bank_img{background-image: url(../../../img/stock_img/nh.png);}
+  
+
+
+
+
+/* ========== #headBox ============= */
+.img{
+  width:200px; height:44px; margin:auto;
+  background-image: url(../../../img/image/open_api/1233.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  margin-bottom: 100px;
+}
+
+
+/* ========== #viewBox ============= */
+
+#viewBox{
+width:80%; height:auto; margin:auto; 
+padding:20px; box-sizing: border-box;
+}
+
+.indicator{
+  width:140px; height:40px;
+  margin:auto; 
+  background-image: url(../../../img/icons/123_3.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#viewBox > form{
+  width:100%; height:auto;
+}
+
+fieldset > p {
+  font-size:1rem; margin-bottom: 5px;
+}
+
+.accNumBtn{
+  float:left;
+  width:25%; height:40px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #fff;
+  color:#777;
+}
+
+.accNum_input{
+  float:right;
+  width:74%; height:40px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.check_title {
+  text-align: center;
+  margin-top: 10px;
+  font-size:1.3rem;
+  font-weight: 500;
+}
+/* ========== #bankBox(aside) ============= */
+
+.next_certi{
+  width:200px; height:45px;
+  margin:auto; 
+  margin-top: 205px;
+}
+
+.next_certi > button{
+  width:200px; height:45px;
+  border-radius: 5px;
+  background-color: #4694D1; color:#fff; 
+}
+
+.next_certi > button > a {line-height: 45px;}

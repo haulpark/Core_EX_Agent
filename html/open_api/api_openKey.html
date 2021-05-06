@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximun-scale=3.0, minimum-scale=0.5">
+
+<link rel="stylesheet" href="../../css/base/reset.css">
+<link rel="stylesheet" href="../../css/base/common.css">
+
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="../../css/src/open_api/api_openKey.css">
+
+<!--[if IE]>
+<script src="./ie/html5shive/dist/html5shive.min.js"></script>
+<script src="./ie/pie/PIE.js"></script>
+<script src="./ie/respond/dist/respond.min.js"></script>
+<![endif] -->
+
+<title> Core EX Agent </title>
+</head>
+<body>
+<!-- layout -->
+<div id="wrap">
+  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
+  <header id="headBox">
+    <h1>
+      <div class="logo"></div>
+      <span>Core EX Agent</span>
+    </h1>
+
+    <nav id="gnb">
+      <ul>
+        <li><a href="../main/main.html">메인</a></li>
+        <li><a href="../main/deal.html">내역</a></li>
+        <li><a href="../main/wallet.html">지갑</a></li>
+        <li><a href="../main/api.html">API</a></li>
+        <li><a href="../main/mypage.html">마이페이지</a></li>
+        <li><a href="../main/store.html">상품소개</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="issuedBox">
+      <div class="issued">
+        <div class="close"></div>
+        <div class="text">
+          <p class="text_p">Open API Key 발급 완료</p>
+          <br />
+          <span>회원님의 Open API Key가 아래와 같이 발급되었습니다.</span>
+          <span>Scret Key는 최초 1회에 한 해 발급되며 추가적으로 확인하실 수 없으니,</span>
+          <span>발급 받으신 Secret Key는 반드시 안전한 곳에 별도로 보관하여 주시기 바랍니다.</span>
+          <span>Open API Key 타인 양도시 발생하는 피해로 인한 책임은 본인에게 있습니다.</span>
+        </div>
+        <div class="keyBox">
+          <ul>
+            <li><span class="li_t">Access Key</span> <span>vx76pptZMtiuxZa3guZxNHnf8kO4GYkNnFue5jT0</span> <button class="scan">복사하기</button></li>
+            <li><span class="li_t">Secret Key</span> <span>vx76pptZMtiuxZa3guZxNHnf8kO4GYkNnFue5jT0</span> <button class="scan">복사하기</button></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+
+  <!-- =-=-=-=-=-=-=-=-=-=-= section#viewBox =-=-=-=-=-=-=-=-=-=-= -->
+  <div class="viewBox">
+    <h2>API 연동</h2>
+    <div class="title_line"></div> 
+
+    <div class="content">
+      <div class="category">
+        <ul>
+          <li><a href="./api_openKey.html">Open API Key 관리</a></li>
+          <li><a href="./api_management.html">디지털 자산 출금주소 관리</a></li>
+        </ul>
+      </div>
+
+      <div class="checkBox">
+
+        <div class="check">
+          <ul>
+            <li><input type="checkbox">자산조회</li>
+            <li><input type="checkbox">주문조회</li>
+            <li><input type="checkbox">주문하기</li>
+            <li><input type="checkbox">출금조회</li>
+            <li><input type="checkbox">출금하기</li>
+            <li><input type="checkbox">입금조회</li>
+            <li><input type="checkbox">입금하기</li>
+            <li><input type="checkbox">특정 IP에서만 실행 <input type="text" placeholder="IP 주소 입력 (','로 구분하여 여러개의 IP 주소 등록 가능)"></li>
+          </ul>
+        </div>
+
+        <div class="btn">
+          <button type="button" class="api_issued"> Open API 발급받기 </button>
+        </div>
+
+        <div class="openkey_ex">
+         <p> - 원하는 기능을 선택하여 해당 기능 활용 가능한 Open API Key를 발급받을 수 있습니다. </p>
+         <p> - 발급받으신 Open API Key는 각 Key 별로 특정 서버 IP 주소에서만 동작할 수 있도록 설정 가능하며, 별도로 IP주소를 지정하지 않으시면, IP 주소 제한 없이 Open API 기능을 이용할 수 있습니다. </p>
+         <p> - 기능 선택과 IP 주소 제한 여부에 따라 별도의 Open API Key 발급이 가능하며, 하단의 Open API Key 관리 메뉴를 통해 관리 가능합니다. Open API Key 발급 및 삭제 시에는 2채널 추가 인증 </p>
+         <p> - (카카오페이)이 필요하며, 필요한 기능의 변경 발생시에는 하단 Open API Key 관리에서 해당 Key를 삭제하신 뒤 다시 등록해주시기 바랍니다. </p>
+         <p> - Secret key는 최초 1회에 한해 발급되며 추가로 확인하실 수 없으니, 발급받으신 Secret key는 반드시 안전한 곳에 별도로 보관하여 주시기 바랍니다. </p>
+         <p> - Open API Key 토큰의 유효 기간은 1년이며 연장은 불가합니다. 유효 기간 만료 후 Open API를 계속하여 사용하고자 하시는 분은 추가로 Open API Key를 발급받아 주시기 바랍니다. </p>
+         <p> - Open API Key 토큰의 만료 기한은 Open API Key 관리 메뉴 내 Access key 하단 정보를 통해 확인 가능합니다. </p>
+         <p> - 주문하기, 출금하기 API를 사용하시기 위해선 반드시 사용하실 IP 주소를 등록하셔야 하며, 해당 IP 주소로 접속 시에만 Open API를 사용하실 수 있습니다. (2021-05-06 부터 적용) </p>
+        </div>
+      </div>
+
+      <div class="key_management">
+        <h3>Open API Key 관리</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Access Key</th>
+              <th>자산조회</th>
+              <th>주문조회</th>
+              <th>주문하기</th>
+              <th>출금조회</th>
+              <th>입금조회</th>
+              <th>입금하기</th>
+              <th>허용 IP주소</th>
+              <th>관리</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span>vx76pptZMtiuxZa3guZxNHnf8kO4GYkNnFue5jT0</span>
+                <span class="date">2022.05.04 13:49 만료</span>
+              </td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td><button>변경</button></td>
+              <td><button>삭제</button></td>
+            </tr>
+            <tr>
+              <td>
+                <span>vx76pptZMtiuxZa3guZxNHnf8kO4GYkNnFue5jT0</span>
+                <span class="date">2022.05.04 13:49 만료</span>
+              </td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td><button>변경</button></td>
+              <td><button>삭제</button></td>
+            </tr>
+          </tbody>
+        </table>
+
+         <div class="key_ex">
+          <p class="key_ex_title">&#42; 주의사항</p>
+          <p> - Open API Key 발급 요청량이 많을 경우, 일시적으로 Open API Key 발급이 중지 될 수 있습니다.</p>
+          <p> - Secret key 분실 혹은 유출 시, 기존 Open API Key를 삭제 후 재생성 하여야 합니다.</p>
+          <p> - Open API Key를 절대 타인에게 양도하지 마시기 바랍니다. 그에 따라 발생하는 피해에 대한 책임은 본인에게 있습니다.</p>
+          <p> - 카카오톡 내 연결 끊기를 진행했을시, 고객센터 문의를 통하여 Open API Key 삭제를 요청해 주시기 바랍니다.</p>
+          <p> - Open API Key 미삭제로 발생하는 금전적 손실의 책임은 본인에게 있습니다.</p>
+          <p> - 업비트 탈퇴하기를 통해 탈퇴 진행시에는 Open API Key가 삭제됩니다.</p>
+         </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+</div>
+<!--script -->
+<script src="../../js/base/jquery-3.5.1.min.js"></script>
+<script src="../../js/base/jquery-ui.min.js"></script>
+
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+<script src="../../js/src/open_api/api_openKey.js"></script>
+</body>
+</html>
