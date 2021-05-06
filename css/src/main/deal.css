@@ -4,7 +4,7 @@
 
 html {scroll-behavior: smooth;}
 
-#wrap{width:100%; height:1080px; background-color: #F8F8F8;}
+#wrap{width:100%; height:100%; background-color: #F8F8F8;}
 
 h2{font-family:paybooc-B; font-size:14pt;}
 .title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
@@ -58,61 +58,95 @@ h2{font-family:paybooc-B; font-size:14pt;}
 
 /* ===================== #headBox ======================== */
   #viewBox{
-    width:1400px; height:1040px;
+    width:1400px; height:820px;
     margin:auto; padding-top: 120px; box-sizing: border-box; 
   }
 
     .amountBox{
-      width:100%; height:500px;
+      width:100%; height:800px;
       background-color: #fff;
       box-shadow: 0 0.5rem 1rem #ccc;
       padding:24px 44px; box-sizing: border-box;
     }
 
-      .info_content{width:1200px; height:auto; margin:50px auto;}
+      .info_content{width:1250px; height:auto; margin:auto;}
 
-      #periodBox{width:100%; height:auto; margin:auto;}
+      .content_title{width:100%; height:100px;}
 
-        #periodBox > thead > tr > td, th{
-          text-align: center;
-          background-color: #004880;
-          color:#fff;
-          border:1px solid #D4D4D4;
-          font-size:1rem; height:30px;
-          font-weight: normal;
+      h3{font-family:nanum; font-size:12pt; height:20px;}
+
+        .date{float:left; width:60%; height:100%;}
+
+          .month{float:left; width:40%; height:40px;}
+
+            .month > ul {width:100%; height:100%;}
+            .month > ul > li {
+              float:left; 
+              width:80px; height:35px;
+              text-align: center;
+              line-height:32px;
+              border-radius:5px;
+              border: 2px solid #D4D4D4;
+              margin-right: 10px;
+              font-family:nanum;
+              font-size:0.9rem;
+            }
+
+            .month > ul > li:last-child{margin-right: 0;}
+            .month > ul > li.current{border:2px solid #4694D1;}
+
+          .date_input{float:left; width:60%; height:80px; font-family: nanum;}
+
+          .date_input > .input_title{margin-right: 5px;}
+          .date_input > input{
+            width:140px; height:32px; font-size:0.9rem;
+            border:1px solid #fff;
+            border-bottom:1px solid #d4d4d4;
+            outline:none;
+          }
+
+        
+
+        .kinds{float:right; width:40%; height:100%; font-family: nanum;}
+        .kinds > select {
+          width:100px; height:32px;
+          border:1px solid #fff;
+          border-bottom:1px solid #d4d4d4;
+          font-size:0.9rem;
+          outline:none;
         }
 
-        #periodBox > thead > tr > th {height:32px;}
-        #periodBox > tbody > tr > td {height:32px; font-size:1rem; text-align: right; border:1px solid #D4D4D4; height:30px;}
+        .content{width:100%; height:auto; margin-top: 10px;}
+        .content > table{
+          width:100%; height:auto; font-family: payBook-B; text-align: center;
+          border:1px solid #707070;
+        }
+        .content > table > thead > tr > th {
+          height:30px; text-align: center;
+          background-color: #EFEFEF;
+          border:none; 
+        }
 
-        #periodBox > thead > tr > th:nth-child(1){width:5%;}
-        #periodBox > thead > tr > th:nth-child(2){width:15%;}
-        #periodBox > thead > tr > th:nth-child(3){width:10%;}
-        #periodBox > thead > tr > th:nth-child(4){width:10%;}
-        #periodBox > thead > tr > th:nth-child(5){width:15%;}
-        #periodBox > thead > tr > th:nth-child(6){width:10%;}
-        #periodBox > thead > tr > th:nth-child(7){width:10%;}
+        .content > table > thead > tr {border: 1px solid #d4d4d4;}
+        .content > table > tbody > tr {border: 1px solid #d4d4d4;}
 
-        #periodBox > tbody > tr > td{text-align: center; border:1px solid #D4D4D4; }
-        #periodBox > tbody > tr > td:nth-child(5){text-align: right; padding-right:10px; box-sizing: border-box;}
+        .content > table > thead > tr > th:nth-child(1){width:10%;}
+        .content > table > thead > tr > th:nth-child(2){width:7%;}
+        .content > table > thead > tr > th:nth-child(3){width:7%;}
+        .content > table > thead > tr > th:nth-child(4){width:5%;}
+        .content > table > thead > tr > th:nth-child(5){width:7%;}
+        .content > table > thead > tr > th:nth-child(6){width:12%;}
+        .content > table > thead > tr > th:nth-child(7){width:15%;}
+        .content > table > thead > tr > th:nth-child(8){width:12%;}
+        .content > table > thead > tr > th:nth-child(9){width:15%;}
+        .content > table > thead > tr > th:nth-child(10){width:10%;}
 
-      .p_indicator{
-        width:180px; height:60px;
-        margin:auto; margin-top: 10px;
-      } 
+        
 
-        .p_indicator ul{width:100%; height:100%}
-        .p_indicator li{float:left; width:20px; font-size:1rem; line-height: 60px;}
+        .content > table > tbody > tr > td{
+          border:none; height:30px;
+        }
 
-        .p_indicator a{color:#333;}
-
-    .amount_content{
-      width:100%; height:400px;
-      background-color: #fff;
-      margin-top: 20px;
-      padding:24px 44px; box-sizing: border-box;
-      box-shadow: 0 0.5rem 1rem #ccc;
-    }
 
 
 

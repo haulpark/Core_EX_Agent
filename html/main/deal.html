@@ -46,132 +46,136 @@
   <section id="viewBox">
     <div class="amountBox">
       <!-- ========= 해당 Box 타이틀 ========= -->
-    <h2>거래내역</h2>
-    <div class="title_line"></div>
-
-    <!-- ========= 해당 Box 내용 ========== -->
-    <div class="info_content">
-      <table id="periodBox">
-        <!-- thead -->
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>거래인 ID</th>
-            <th>거래코인</th>
-            <th>수량</th>
-            <th>거래금액</th>
-            <th>거래시간</th>
-            <th>거래상태</th>
-          </tr>
-        </thead>
-        <!-- tbody -->
-        <tbody>
-          <!-- tr-1 -->
-          <tr>
-            <th>1</th>
-            <td>Jcsoft_eagleKim</td>
-            <td>CRE</td>
-            <td>500</td>
-            <td>1,800,000 ₩</td>
-            <td>21.05.21 12:00</td>
-            <td>정상</td>
-          </tr>
-          <!-- tr-2 -->
-          <tr class="td_1">
-            <th>2</th>
-            <td>Jcsoft_eagleKim</td>
-            <td>CRE</td>
-            <td>500</td>
-            <td>1,800,000 ₩</td>
-            <td>21.05.21 12:00</td>
-            <td>정상</td>
-          </tr>
-          <!-- tr-3 -->
-          <tr>
-            <th>3</th>
-            <td>Jcsoft_eagleKim</td>
-            <td>CRE</td>
-            <td>500</td>
-            <td>1,800,000 ₩</td>
-            <td>21.05.21 12:00</td>
-            <td>정상</td>
-          </tr>
-          <!-- tr-4 -->
-          <tr class="td_1">
-            <th>4</th>
-            <td>Jcsoft_eagleKim</td>
-            <td>CRE</td>
-            <td>500</td>
-            <td>1,800,000 ₩</td>
-            <td>21.05.21 12:00</td>
-            <td>정상</td>
-          </tr>
-          <!-- tr-5 -->
-          <tr>
-            <th>5</th>
-            <td>Jcsoft_eagleKim</td>
-            <td>CRE</td>
-            <td>500</td>
-            <td>1,800,000 ₩</td>
-            <td>21.05.21 12:00</td>
-            <td>정상</td>
-          </tr>
-          <!-- tr-6 -->
-          <tr class="td_1">
-            <th>6</th>
-            <td>Jcsoft_eagleKim</td>
-            <td>CRE</td>
-            <td>500</td>
-            <td>1,800,000 ₩</td>
-            <td>21.05.21 12:00</td>
-            <td>정상</td>
-          </tr>
-          <!-- tr-7 -->
-          <tr>
-            <th>7</th>
-            <td>Jcsoft_eagleKim</td>
-            <td>CRE</td>
-            <td>500</td>
-            <td>1,800,000 ₩</td>
-            <td>21.05.21 12:00</td>
-            <td>정상</td>
-          </tr>
-          <!-- tr-8 -->
-          <tr class="td_1">
-            <th>8</th>
-            <td>Jcsoft_eagleKim</td>
-            <td>CRE</td>
-            <td>500</td>
-            <td>1,800,000 ₩</td>
-            <td>21.05.21 12:00</td>
-            <td>정상</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="p_indicator">
-        <ul>
-          <li><a href="#">&#60;&#60;</a></li>
-          <li><a href="#">&#60;</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">&#62;</a></li>
-          <li><a href="#">&#62;&#62;</a></li>
-        </ul>
-      </div>        
-    </div>
-
-    </div>
-
-    <div class="amount_content">
-      <h2>거래내역 세부정보</h2>
+      <h2>거래내역</h2>
       <div class="title_line"></div>
 
-      
+      <!-- ========= 해당 Box 내용 ========== -->
+      <div class="info_content">
+        <div class="content_title">
+          <div class="date">
+            <h3>기간</h3> 
+            <div class="month">
+              <ul class="tabs">
+                <li class="current">1개월</li>
+                <li>3개월</li>
+                <li>6개월</li>
+              </ul>
+            </div>
+            <div class="date_input">
+              <span class="input_title">직접입력</span>
+              <input type="date"> <span> &#126; </span> <input type="date">
+            </div>
+          </div>
 
+          <div class="kinds">
+            <h3>거래종류</h3>
+             <select name="kinds">
+              <option value="">전체</option>
+              <option value="매수">매수</option>
+              <option value="매도">매도</option>
+              <option value="입금">입금</option>
+              <option value="출금">출금</option>
+             </select>
+          </div>
+        </div>
+
+        <div class="content">
+          <table>
+            <thead>
+              <tr>
+                <th>체결시간</th>
+                <th>코인</th>
+                <th>마켓</th>
+                <th>종류</th>
+                <th>거래수량</th>
+                <th>거래단가</th>
+                <th>거래금액</th>
+                <th>수수료</th>
+                <th>정산금액</th>
+                <th>주문시간</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>21. 05. 06</td>
+                <td>CRE</td>
+                <td>riot</td>
+                <td>매도</td>
+                <td>500</td>
+                <td>1,000 ₩</td>
+                <td>180,000,000 ₩</td>
+                <td>1,300 ₩</td>
+                <td>179,998,700 ₩</td>
+                <td>21. 05. 06 12:00</td>
+              </tr>
+              <tr>
+                <td>21. 05. 06</td>
+                <td>CRE</td>
+                <td>riot</td>
+                <td>매도</td>
+                <td>500</td>
+                <td>1,000 ₩</td>
+                <td>180,000,000 ₩</td>
+                <td>1,300 ₩</td>
+                <td>179,998,700 ₩</td>
+                <td>21. 05. 06 12:00</td>
+              </tr>
+              <tr>
+                <td>21. 05. 06</td>
+                <td>CRE</td>
+                <td>riot</td>
+                <td>매도</td>
+                <td>500</td>
+                <td>1,000 ₩</td>
+                <td>180,000,000 ₩</td>
+                <td>1,300 ₩</td>
+                <td>179,998,700 ₩</td>
+                <td>21. 05. 06 12:00</td>
+              </tr>
+              <tr>
+                <td>21. 05. 06</td>
+                <td>CRE</td>
+                <td>riot</td>
+                <td>매도</td>
+                <td>500</td>
+                <td>1,000 ₩</td>
+                <td>180,000,000 ₩</td>
+                <td>1,300 ₩</td>
+                <td>179,998,700 ₩</td>
+                <td>21. 05. 06 12:00</td>
+              </tr>
+              <tr>
+                <td>21. 05. 06</td>
+                <td>CRE</td>
+                <td>riot</td>
+                <td>매도</td>
+                <td>500</td>
+                <td>1,000 ₩</td>
+                <td>180,000,000 ₩</td>
+                <td>1,300 ₩</td>
+                <td>179,998,700 ₩</td>
+                <td>21. 05. 06 12:00</td>
+              </tr>
+              <tr>
+                <td>21. 05. 06</td>
+                <td>CRE</td>
+                <td>riot</td>
+                <td>매도</td>
+                <td>500</td>
+                <td>1,000 ₩</td>
+                <td>180,000,000 ₩</td>
+                <td>1,300 ₩</td>
+                <td>179,998,700 ₩</td>
+                <td>21. 05. 06 12:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+
+
+
+      </div>
     </div>
   </section>
 </div>
