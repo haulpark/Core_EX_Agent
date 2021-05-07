@@ -183,3 +183,35 @@ h2{font-family:paybooc-B; font-size:14pt;}
   .panel-title > ul > li:nth-child(4){width:10%;}
   .panel-title > ul > li:nth-child(5){width:10%;}
   .panel-title > ul > li:nth-child(6){width:10%;}
+
+  /* ========================== 반응형 ========================== */
+  
+  /* ----------------------- 모바일 (~640px) -------------------- */
+  @media screen and (max-width: 640px) {
+
+
+  }
+
+  /* -------------------- 태블릿 (641px ~ 1080px) ------------------ */
+  @media screen and (min-width: 641px) and (max-width: 1080px) {
+
+
+  }
+
+  /* -------------------- 랩탑 (1081px ~ 1400px) ------------------ */
+  @media screen and (min-width: 1081px) and (max-width: 1400px) {
+
+
+  }
+
+  /* -------------------- 노트북 (1401px ~ 1920px) ------------------ */
+  @media screen and (min-width: 1401px) and (max-width: 1920px) {
+
+
+  }
+
+ /* ----------------------- PC (1921px ~) ---------------------- */
+  @media screen and (min-width: 1921px) {
+
+
+  }
