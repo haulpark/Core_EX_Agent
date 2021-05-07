@@ -12,6 +12,14 @@ $(document).ready(function(){
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
+	});
+	
+	// ============= 정산요청 탭 ===============
+	$('ul.tabs li').click(function(){
+
+		$('ul.tabs li').removeClass('current');
+
+		$(this).addClass('current');
   });
   
 });
