@@ -1,0 +1,142 @@
+/* api_openKey.css */
+
+/* ======== 기본설정 ======== */
+
+html {scroll-behavior: smooth;}
+
+#wrap{width:100%; height:100%; background-color: #F8F8F8;}
+
+h2{font-family:paybooc-B; font-size:12pt;}
+.title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
+
+/* ===================== #headBox ======================== */
+
+#headBox{
+  width:100%; height:100px;
+  background-color: #fff;
+  border-bottom: 2px solid #f5f6f7;
+  padding:25px 250px; box-sizing: border-box;
+}
+
+  h1{
+    float:left;
+    width:340px; height:60px;
+    font-family: paybooc-B;
+    margin-top:0;}
+
+    .logo{
+      float:left;
+      width:128px; height:60px;
+      background-image: url(../../../img/image/corepay_logo.png);
+      background-position: 50% 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    h1 > span{
+      float:left; 
+      font-size:20pt; color:#4694D1; 
+      line-height: 50px; margin-left: 10px;}
+
+
+  #gnb{
+    float:right; 
+    width:540px; height:50px; 
+    font-family: paybooc-M;
+  }
+
+    #gnb ul{width:100%; height:100%;}
+    #gnb ul li{
+      float:left; width:90px; height:100%; 
+      line-height: 50px; font-size:12pt;
+      text-align: center; color:#333;
+    }
+
+    #gnb ul li a {color:#333;}
+    #gnb ul li:nth-child(4) a {color:#4694D1; font-weight: bold;}
+
+/* ===================== #viewBox ======================== */
+.viewBox{
+  width:1400px; height:812px;
+  margin:auto; margin-top: 30px;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem #ccc;
+  padding:24px 44px; box-sizing: border-box;
+  overflow:hidden;
+}
+
+h2{font-family:paybooc-B; font-size:12pt;}
+  .title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
+
+
+  .content{width:100%; height:auto;}
+
+  /* ===================== 상단 메뉴 탭 ===================== */
+  .category{width:100%; height:40px; margin-bottom: 24px;}
+    .category > ul {width:100%; height:100%;}
+    .category > ul > li {
+      float:left; width:188px; height:40px; text-align: center;
+      border:2px solid #D4D4D4; margin-right: 10px;
+      border-radius: 5px; line-height: 34px; color:#d4d4d4;
+    }
+    .category > ul > li > a {color:#a1a1a1;}
+    .category > ul > li:last-child{border:2px solid #4694D1;}
+    .category > ul > li:last-child > a {color:#4694D1;}
+
+
+  /* ===================== 하단 콘텐츠 내용 ===================== */
+  .key_management{
+    width:100%; height:600px; 
+    margin-top: 24px;
+    border:1px solid #d4d4d4;
+    padding:24px; box-sizing: border-box;
+  }
+
+    .key_ex{width:100%; height:130px;}
+
+    .searchBox{width:100%; height:40px; margin:10px auto;}
+
+    .inputBox{float:left; width:200px; height:36px; border:2px solid #d4d4d4;}
+    .inputBox > input[type=search] {width:196px; height:32px; margin:auto; border:1px solid #fff; outline: none;}
+    .search_img{
+      position: relative; top:-86%; left:85%;
+      width:22px; height:22px;
+      background-image: url(../../../img/icons/search.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+    .input_text{margin-left: 10px; width:900px;}
+    .input_text > input[type=text] {width:896px; height:32px; margin:auto; border:1px solid #fff; outline: none;}
+    #searchBox > button {margin-left:10px; width:100px;}
+
+    .btnBox{width:140px; height:36px; border:none; margin-left: 10px;}
+    .btnBox > button {width:100%; height:100%; background-color: #4694D1; color:#fff; border-radius: 5px; font-size:0.9rem;}
+
+
+    .key_management > table{width:100%; height:auto; margin-top: 24px;}
+    .key_management > table > thead > tr > th {
+      height:30px; text-align: center; border:1px solid #d4d4d4;
+      background-color: #EFEFEF; font-weight: 400;
+    }
+
+    .key_management > table > thead > tr > th:nth-child(1){width:20%;}
+    .key_management > table > thead > tr > th:nth-child(2){width:8%;}
+    .key_management > table > thead > tr > th:nth-child(3){width:8%;}
+    .key_management > table > thead > tr > th:nth-child(4){width:8%;}
+    .key_management > table > thead > tr > th:nth-child(5){width:8%;}
+    .key_management > table > thead > tr > th:nth-child(6){width:8%;}
+    .key_management > table > thead > tr > th:nth-child(7){width:8%;}
+    .key_management > table > thead > tr > th:nth-child(8){width:17%;}
+    .key_management > table > thead > tr > th:nth-child(9){width:5%;}
+
+    .key_management > table > tbody > tr > td {
+      height:60px; text-align: center; border:1px solid #d4d4d4;
+    }
+
+    .key_management > table > tbody > tr > td:first-child{text-align: left; padding-left:10px; box-sizing: border-box;}
+    .key_management > table > tbody > tr > td:first-child > span.date{font-size:0.9rem; color:#8A8A8A;}
+
+    .key_management > table > tbody > tr > td > button {width:50px; height:28px; font-size:0.9rem; background-color: #fff; border:1px solid #ccc; border-radius: 5px;}
+
+    .pr{margin-top: 10px; }
