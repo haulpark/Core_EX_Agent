@@ -129,6 +129,38 @@ h2{font-family:paybooc-B; font-size:12pt;}
       border-radius: 5px;
     }
 
+  .profile_modify_box{
+    display:none;
+    width:1000px; height:auto;
+    margin:auto; margin-top: 150px;
+  }
+
+    .profile_modify_box form{width:100%; height:100%;}
+    .profile_modify_ul{width:100%; height:100%;}
+    .profile_modify_ul > li{width:100%; height:50px;}
+    .profile_modify_ul > li > dl{width:100%; height:100%; font-size:1rem;}
+    .profile_modify_ul > li > dl > dt{float:left; width:15%; height:100%; text-align: right;}
+    .profile_modify_ul > li > dl > dd{float:left; width:30%; height:100%;}
+    .profile_modify_ul > li > dl > dd > input{
+      width:280px; height:36px; margin-top:-10px;
+      margin-left: 30px;
+      border:1px solid #ccc;
+    }
+
+    .profile_modify_ul > li:nth-child(2) > dl > dd > input{background-color: #EBEBEB;}
+    .profile_modify_ul > li:nth-child(5) > dl > dd > input{background-color: #EBEBEB;}
+    .profile_modify_ul > li:nth-child(6) > dl > dd > input{background-color: #EBEBEB;}
+    
+
+    .profile_modify_btn{
+      float:right; margin-top: 20px; 
+      width:165px; height:32px; font-size:1rem; color:#fff;
+    }
+
+    .profile_modify_btn > button {width:80px; height:32px; border-radius: 5px;}
+    .profile_modify_no{float:left; background-color: #9f9f9f;}
+    .profile_modify_yes{float:right; background-color: #4694D1;}
+
   /* tab-4 : 소명자료요청 */
   .exBox{
     width:100%; height:auto; 
