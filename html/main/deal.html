@@ -23,14 +23,11 @@
 <body>
 <!-- layout -->
 <div id="wrap">
-  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
-  <header id="headBox">
-    <h1>
-      <div class="logo"></div>
-      <span>Core EX Agent</span>
-    </h1>
 
-    <nav id="gnb">
+  <div class="mob_menuBar">
+    <div class="menu">
+      <div class="close_btn"></div>
+
       <ul>
         <li><a href="./main.html">메인</a></li>
         <li><a href="./deal.html">내역</a></li>
@@ -39,7 +36,29 @@
         <li><a href="./mypage.html">마이페이지</a></li>
         <li><a href="./store.html">상품소개</a></li>
       </ul>
-    </nav>
+    </div>
+  </div>
+  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
+  <header id="headBox">
+    <div class="div">
+      <div class="mob_menu"> </div>
+
+      <h1>
+        <div class="logo"></div>
+        <span>Core EX Agent</span>
+      </h1>
+
+      <nav id="gnb">
+        <ul>
+          <li><a href="./main.html">메인</a></li>
+          <li><a href="./deal.html">내역</a></li>
+          <li><a href="./wallet.html">지갑</a></li>
+          <li><a href="./api.html">API</a></li>
+          <li><a href="./mypage.html">마이페이지</a></li>
+          <li><a href="./store.html">상품소개</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- =-=-=-=-=-=-=-=-=-=-= section#viewBox =-=-=-=-=-=-=-=-=-=-= -->
@@ -52,8 +71,10 @@
       <!-- ========= 해당 Box 내용 ========== -->
       <div class="info_content">
         <div class="content_title">
+
           <div class="date">
             <h3>기간</h3> 
+
             <div class="month">
               <ul class="tabs">
                 <li class="current">1개월</li>
@@ -61,6 +82,7 @@
                 <li>6개월</li>
               </ul>
             </div>
+            
             <div class="date_input">
               <span class="input_title">직접입력</span>
               <input type="date"> <span> &#126; </span> <input type="date">
@@ -171,6 +193,67 @@
             </tbody>
           </table>
         </div>
+
+        <div class="content_mob">
+          <p>(단위 : 만원)</p>
+          <table>
+            <thead>
+              <tr>
+                <th>체결시간</th>
+                <th>거래종류</th>
+                <th>거래단가</th>
+                <th>수수료</th>
+              </tr>
+              <tr>
+                <th>코인</th>
+                <th>거래수량</th>
+                <th>거래금액</th>
+                <th>정산금액</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>21. 05. 06</td>
+                <td>매도</td>
+                <td>1,000 ₩</td>
+                <td>1,300 ₩</td>
+              </tr>
+              <tr>
+                <td>CRE</td>
+                <td>500</td>
+                <td>180,000 ₩</td>
+                <td>179,998 ₩</td>
+              </tr>
+
+              <tr>
+                <td>21. 05. 06</td>
+                <td>매도</td>
+                <td>1,000 ₩</td>
+                <td>1,300 ₩</td>
+              </tr>
+              <tr>
+                <td>CRE</td>
+                <td>500</td>
+                <td>180,000 ₩</td>
+                <td>179,998 ₩</td>
+              </tr>
+
+              <tr>
+                <td>21. 05. 06</td>
+                <td>매도</td>
+                <td>1,000 ₩</td>
+                <td>1,300 ₩</td>
+              </tr>
+              <tr>
+                <td>CRE</td>
+                <td>500</td>
+                <td>180,000 ₩</td>
+                <td>179,998 ₩</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         
 
 
@@ -185,6 +268,7 @@
 
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
 
+<script src="../../js/src/main/main.js"></script>
 <script src="../../js/src/main/deal.js"></script>
 </body>
 </html>
