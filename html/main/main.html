@@ -23,14 +23,10 @@
 <body>
 <!-- layout -->
 <div id="wrap">
-  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
-  <header id="headBox">
-    <h1>
-      <div class="logo"></div>
-      <span>Core EX Agent</span>
-    </h1>
+  <div class="mob_menuBar">
+    <div class="menu">
+      <div class="close_btn"></div>
 
-    <nav id="gnb">
       <ul>
         <li><a href="./main.html">메인</a></li>
         <li><a href="./deal.html">내역</a></li>
@@ -39,11 +35,37 @@
         <li><a href="./mypage.html">마이페이지</a></li>
         <li><a href="./store.html">상품소개</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </div>
+
+  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
+  <div id="headBox" class="navbar-fixed-top">
+    <div class="div">
+
+      <div class="mob_menu"> </div>
+
+      <h1>
+        <div class="logo"></div>
+        <span>Core EX Agent</span>
+      </h1>
+
+      <nav id="gnb">
+        <ul>
+          <li><a href="./main.html">메인</a></li>
+          <li><a href="./deal.html">내역</a></li>
+          <li><a href="./wallet.html">지갑</a></li>
+          <li><a href="./api.html">API</a></li>
+          <li><a href="./mypage.html">마이페이지</a></li>
+          <li><a href="./store.html">상품소개</a></li>
+        </ul>
+      </nav>
+
+      
+    </div>
+  </div>
 
   <!-- =-=-=-=-=-=-=-=-=-=-= section#viewBox =-=-=-=-=-=-=-=-=-=-= -->
-  <section id="viewBox">
+  <div id="viewBox">
     <div class="amountBox view_content">
       <!-- ========= 해당 Box 타이틀 ========= -->
       <h2>매출금액</h2>
@@ -51,7 +73,7 @@
 
       <!-- ========= 해당 Box 내용 ========== -->
       <div class="amount_content">
-        <div id="graph"></div>
+        <div id="graph" width="100%"></div>
       
         <table id="data">
           <thead>
@@ -103,13 +125,13 @@
 
       <!-- ========= 해당 Box 내용 ========== -->
       <div class="detail_content">
-        <h3>좌측 매출금액 차트에서<br />보고 싶은 항목을 선택해주세요.</h3>
+        <h3>매출금액 차트에서<br />보고 싶은 항목을 선택해주세요.</h3>
       </div>
     </div>  
-  </section>
+  </div>
 
   <!-- =-=-=-=-=-=-=-=-=-=-= article#infoBox =-=-=-=-=-=-=-=-=-=-= -->
-  <article id="infoBox">
+  <div id="infoBox">
     <!-- ========= 해당 Box 타이틀 ========= -->
     <h2>거래내역</h2>
     <div class="title_line"></div>
@@ -230,10 +252,10 @@
     </div>
 
 
-  </article>
+  </div>
 
   <!-- =-=-=-=-=-=-=-=-=-=-= article#manBox =-=-=-=-=-=-=-=-=-=-= -->
-  <article id="conBox">
+  <div id="conBox">
     <!-- ========= 해당 Box 타이틀 ========= -->
     <h2>상담문의 내역</h2>
     <div class="title_line"></div>
@@ -370,7 +392,7 @@
 
          
     </div>
-  </article>
+  </div>
   
 </div>
 <!--script -->

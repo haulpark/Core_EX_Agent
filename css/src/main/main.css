@@ -11,12 +11,16 @@ h2{font-family:paybooc-B; font-size:14pt;}
 /* ===================== #headBox ======================== */
 
 #headBox{
-  position: fixed; z-index:1000;
   width:100%; height:100px;
   background-color: #fff;
   border-bottom: 2px solid #f5f6f7;
-  padding:25px 250px; box-sizing: border-box;
+  padding:25px 0; box-sizing: border-box;
 }
+
+  .div{
+    width:1400px; height:auto;
+    margin:auto;
+  }
 
   h1{
     float:left;
@@ -54,6 +58,9 @@ h2{font-family:paybooc-B; font-size:14pt;}
 
     #gnb ul li a {color:#333;}
     #gnb ul li:first-child a {color:#4694D1; font-weight: bold;}
+
+  .mob_menu{display:none;}
+  .mob_menuBar{display:none;}
 
 /* ===================== #viewBox ======================== */
 
@@ -112,7 +119,6 @@ h2{font-family:paybooc-B; font-size:14pt;}
       text-align: center; 
       font-family: payBooc-M; font-weight:normal;
       margin-top: 200px; font-size:14pt; color:#aaa;}
-
 
 
  /* ===================== #infoBox ======================== */
@@ -184,34 +190,329 @@ h2{font-family:paybooc-B; font-size:14pt;}
   .panel-title > ul > li:nth-child(5){width:10%;}
   .panel-title > ul > li:nth-child(6){width:10%;}
 
-  /* ========================== 반응형 ========================== */
+  /* ======================================= 반응형 ======================================= */
   
   /* ----------------------- 모바일 (~640px) -------------------- */
   @media screen and (max-width: 640px) {
-    
 
-  }
+    #wrap{position: relative; height:2120px;}
+    h2{font-size:11pt;}
+    .title_line{margin:20px 0 0 0;}
+
+    .mob_menuBar{
+      position: absolute; z-index:10000;
+      width:100%; height:100%;
+    }
+
+    .menu{
+      width:300px; height:100%;
+      background-color: #fff;
+      padding-top:30px; box-sizing: border-box;
+    }
+      .close_btn{
+        width:24px; height:24px;
+        margin-left: 250px;
+        background-image: url(../../../img/icons/close.png);
+      }
+
+      .menu > ul {width:100%; height:500px; padding-top: 80px;}
+      .menu > ul > li {
+        width:100%; height:48px; line-height: 48px; font-size:12pt;
+        padding-left:20px;
+        font-family: payBooc-M;
+      }
+
+      .menu > ul > li:hover{background-color: #F2F8FC;}
+      .menu > ul > li:hover a {color:#4694D1; }
+
+      .menu ul li a {color:#333;}
+      .menu ul li:first-child a{color:#4694D1;}
+
+    /* ===================== #headBox ======================== */
+    #headBox{position: static;}
+
+      #headBox{
+        width:100%; height:56px;
+        padding:5px 20px; box-sizing: border-box;
+        margin:auto;
+      }
+
+        .div{width:100%; height:100%;}
+
+          h1{
+            float:none;
+            width:205px; height:50px;
+            margin:auto;
+          }
+
+            .logo{
+              float:left;
+              width:80px; height:50px;
+              background-image: url(../../../img/image/corepay_logo.png);
+              background-position: 50% 50%;
+              background-size: 100%;
+              background-repeat: no-repeat;
+            }
+            
+            h1 > span{margin-left: 5px; font-size:12pt;}
+
+    #gnb{display:none;}
+
+    .mob_menu{
+      display:block;
+      float:left; width:24px; height:24px; margin-top:12px;
+      background-image: url(../../../img/icons/mob_menu.png);
+      background-position: 50% 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    /* ===================== #viewBox ======================== */
+    #viewBox{width:100%; height:1060px; padding:0; box-sizing: border-box; margin-top:10px;} 
+
+      .view_content{
+        width:100%; height:500px;  margin-bottom: 20px;
+        padding:10px 24px; box-sizing: border-box;
+      }
+
+        #graph{
+          width:90%; height:200px;
+          margin:20px auto;}
+
+        #data{
+          width:100%; height:150px;
+          margin:auto; 
+        }
+
+        #data > thead > tr > td, th{
+          font-size:0.9rem; height:25px;
+        }
+
+        #data > tbody > tr > td{
+          font-size:0.875rem; height:25px;
+        }
+
+
+      .amountBox{height:520px;}
+
+      .detailBox{height:500px; margin-bottom: 0px;}
+
+        h3{
+          margin-top: 180px; font-size:12pt; color:#aaa;}
+
+    /* ===================== #infoBox ======================== */
+    #infoBox{
+      width:100%; margin:auto; height:500px;
+      padding:10px 24px; box-sizing: border-box;
+    }
+
+      .info_content{
+        width:100%; height:auto; margin:20px auto;
+        overflow-x:scroll;
+      }
+
+      #periodBox{width:600px; height:auto;}
+
+        #periodBox > thead > tr > th {height:30px; font-size:0.9rem;}
+        #periodBox > tbody > tr > td {height:30px; font-size:0.875rem;}
+
+        #periodBox > tbody > tr > td{text-align: center; border:1px solid #D4D4D4; }
+        #periodBox > tbody > tr > td:nth-child(5){text-align: right; padding-right:10px; box-sizing: border-box;}
+
+
+    /* ===================== #conBox ======================== */
+    #conBox{width:100%; margin-top: 20px;
+      padding:10px 24px; box-sizing: border-box; height:auto;
+      
+    }
+
+    .con_content{
+      width:100%; height:auto; padding-top:20px; box-sizing: border-box;
+      overflow-x:scroll; }
+
+      .panel-group{width:600px;}
+
+
+      .panel-t{width:100%; height:30px;}
+      .panel-t > ul{width:100%; height:100%;}
+      .panel-t > ul > li {float:left; text-align: center; line-height:15px; font-size:10pt;}
+
+      .panel-heading{padding:0; height:40px;}
+      .panel-title > ul{width:100%; margin:0; padding:0; }
+      .panel-title > ul > li{float:left; height:100%; line-height:40px; text-align: center; font-size:0.875rem; font-weight: normal;}
+    }
+  
 
   /* -------------------- 태블릿 (641px ~ 1080px) ------------------ */
-  @media screen and (min-width: 641px) and (max-width: 1080px) {
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    #wrap{height:2370px;}
+    h2{font-size:11pt;}
+    .title_line{margin:20px 0 0 0;}
+
+      #headBox{
+        width:100%; height:80px;
+        padding:15px 10px; box-sizing: border-box;
+        margin:auto;
+      }
+
+        .div{width:100%; height:100%;}
+
+          h1{
+            float:left;
+            width:210px; height:50px;
+            font-family: paybooc-B;
+            margin-top:0;}
+
+            .logo{
+              float:left;
+              width:80px; height:50px;
+              background-image: url(../../../img/image/corepay_logo.png);
+              background-position: 50% 50%;
+              background-size: 90%;
+              background-repeat: no-repeat;
+            }
+            
+            h1 > span{font-size:12pt;}
 
 
+          #gnb{
+            float:right; 
+            width:360px; height:50px; 
+            font-family: paybooc-M;
+          }
+
+            #gnb ul{width:100%; height:100%;}
+            #gnb ul li{
+              float:left; width:60px; height:100%; 
+              line-height: 50px; font-size:9pt;
+              text-align: center; color:#333;
+            }
+
+    /* ===================== #viewBox ======================== */
+    #viewBox{width:100%; height:1160px; padding:100px 5% 0 5%; box-sizing: border-box;}
+
+      .view_content{
+        width:100%; height:60vw;  margin-bottom: 20px;
+        padding:10px 24px; box-sizing: border-box;
+      }
+
+        #graph{
+          width:75%; height:200px;
+          margin:40px auto;}
+
+        #data{
+          width:540px; height:150px;
+          margin:auto; 
+        }
+
+        #data > thead > tr > td, th{
+          font-size:1rem; height:25px;
+        }
+
+        #data > tbody > tr > td{
+          font-size:1rem; height:25px;
+        }
+
+
+      .amountBox{height:520px;}
+
+      .detailBox{height:500px; margin-bottom: 0px;}
+
+        h3{
+          margin-top: 180px; font-size:12pt; color:#aaa;}
+
+    /* ===================== #infoBox ======================== */
+    #infoBox{
+      width:90%; margin:auto; height:500px;
+      padding:10px 24px; box-sizing: border-box;
+    }
+
+      .info_content{
+        width:100%; height:auto; margin:20px auto;
+      }
+
+      #periodBox{width:100%; height:auto;}
+
+        #periodBox > thead > tr > th {height:30px; font-size:1rem;}
+        #periodBox > tbody > tr > td {height:30px; font-size:0.9rem;}
+
+        #periodBox > tbody > tr > td{text-align: center; border:1px solid #D4D4D4; }
+        #periodBox > tbody > tr > td:nth-child(5){text-align: right; padding-right:10px; box-sizing: border-box;}
+
+
+    #conBox{width:90%; margin:auto; margin-top: 20px;
+      padding:10px 24px; box-sizing: border-box; height:auto;
+    }
+
+    .con_content{
+      width:100%; height:auto; padding-top:20px; box-sizing: border-box;}
+    }
+
+      .panel-t{width:100%; height:30px;}
+      .panel-t > ul{width:100%; height:100%;}
+      .panel-t > ul > li {float:left; text-align: center; line-height:15px; font-size:10pt;}
+
+      .panel-heading{padding:0; height:40px;}
+      .panel-title > ul{width:100%; margin:0; padding:0; }
+      .panel-title > ul > li{float:left; height:100%; line-height:40px; text-align: center; font-size:0.875rem; font-weight: normal;}
+
+/* -------------------- 랩탑 (1081px ~ 1400px) ------------------ */
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+
+  #wrap{height:2100px;}
+
+  #headBox{
+    width:100%; height:80px;
+    padding:15px 20px; box-sizing: border-box;
+    margin:auto;
   }
 
-  /* -------------------- 랩탑 (1081px ~ 1400px) ------------------ */
-  @media screen and (min-width: 1081px) and (max-width: 1400px) {
+  .div{width:100%; height:100%;}
+
+    h1{
+      float:left;
+      width:340px; height:50px;
+      font-family: paybooc-B;
+      margin-top:0;}
+
+      .logo{
+        float:left;
+        width:100px; height:50px;
+        background-image: url(../../../img/image/corepay_logo.png);
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      
+      h1 > span{font-size:18pt;}
 
 
-  }
+    #gnb{
+      float:right; 
+      width:540px; height:50px; 
+      font-family: paybooc-M;
+    }
 
-  /* -------------------- 노트북 (1401px ~ 1920px) ------------------ */
-  @media screen and (min-width: 1401px) and (max-width: 1920px) {
+      #gnb ul{width:100%; height:100%;}
+      #gnb ul li{
+        float:left; width:90px; height:100%; 
+        line-height: 50px; font-size:11pt;
+        text-align: center; color:#333;
+      }
 
 
-  }
+  #viewBox{width:100%; height:720px; padding:100px 0 0 0; box-sizing: border-box;}
 
- /* ----------------------- PC (1921px ~) ---------------------- */
-  @media screen and (min-width: 1921px) {
+    .view_content{width:48%;}
 
+  #infoBox{width:100%;}
 
-  }
+    .info_content{width:100%;}
+
+  #conBox{width:100%; }
+
+   .con_content{width:100%;}
+
+}
+
