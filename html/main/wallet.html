@@ -23,23 +23,53 @@
 <body>
 <!-- layout -->
 <div id="wrap">
-  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
-  <header id="headBox">
-    <h1>
-      <div class="logo"></div>
-      <span>Core EX Agent</span>
-    </h1>
 
-    <nav id="gnb">
+  <div class="mob_menuBar">
+    <div class="menu">
+      <div class="close_btn"></div>
+
       <ul>
         <li><a href="./main.html">메인</a></li>
         <li><a href="./deal.html">내역</a></li>
         <li><a href="./wallet.html">지갑</a></li>
         <li><a href="./api.html">API</a></li>
-        <li><a href="./mypage.html">마이페이지</a></li>
+        <li>
+          <dl class="dl_mypage">
+            <dt class="dd_mypage"><span>마이페이지</span><div class="menu_img"></div></dt>
+            <dd><a href="./mypage_info.html">기본등록정보</a></dd>
+            <dd><a href="./mypage_deal.html">거래등록정보</a></dd>
+            <dd><a href="./mypage_store.html">상품구매내역</a></dd>
+            <dd><a href="./mypage_data.html">소명자료요청</a></dd>
+            <dd><a href="./mypage_calculate.html">정산요청</a></dd>
+            <dd><a href="./mypage_qna.html">상담내역</a></dd>
+          </dl>
+        </li>
         <li><a href="./store.html">상품소개</a></li>
       </ul>
-    </nav>
+    </div>
+  </div>
+
+  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
+  <header id="headBox">
+    <div class="div">
+      <div class="mob_menu"> </div>
+
+      <h1>
+        <div class="logo"></div>
+        <span>Core EX Agent</span>
+      </h1>
+
+      <nav id="gnb">
+        <ul>
+          <li><a href="./main.html">메인</a></li>
+          <li><a href="./deal.html">내역</a></li>
+          <li><a href="./wallet.html">지갑</a></li>
+          <li><a href="./api.html">API</a></li>
+          <li><a href="./mypage_info.html">마이페이지</a></li>
+          <li><a href="./store.html">상품소개</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- =-=-=-=-=-=-=-=-=-=-= section#viewBox =-=-=-=-=-=-=-=-=-=-= -->
@@ -163,6 +193,62 @@
         </tbody>
       </table>
     </div>
+
+    <div class="mob_coin_list">
+      <h3>보유코인 목록</h3>
+
+      <p> (단위 : 만원)</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>보유코인</th>
+            <th>보유 수</th>
+            <th>매수평균가</th>
+          </tr>
+          <tr>
+            <th>매수금액</th>
+            <th>평가금액</th>
+            <th>평가손익(%)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
       
   </div>
 </div>
@@ -172,6 +258,7 @@
 
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
 
+<script src="../../js/src/main/main.js"></script>
 <script src="../../js/src/main/wallet.js"></script>
 </body>
 </html>

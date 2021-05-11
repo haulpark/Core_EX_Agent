@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximun-scale=3.0, minimum-scale=0.5">
+
+<link rel="stylesheet" href="../../css/base/reset.css">
+<link rel="stylesheet" href="../../css/base/common.css">
+
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="../../css/src/main/mypage.css">
+
+<!--[if IE]>
+<script src="./ie/html5shive/dist/html5shive.min.js"></script>
+<script src="./ie/pie/PIE.js"></script>
+<script src="./ie/respond/dist/respond.min.js"></script>
+<![endif] -->
+
+<title> Core EX Agent </title>
+</head>
+<body>
+<!-- layout -->
+<div id="wrap">
+  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
+  <header id="headBox">
+    <h1>
+      <div class="logo"></div>
+      <span>Core EX Agent</span>
+    </h1>
+
+    <nav id="gnb">
+      <ul>
+        <li><a href="./main.html">메인</a></li>
+        <li><a href="./deal.html">내역</a></li>
+        <li><a href="./wallet.html">지갑</a></li>
+        <li><a href="./api.html">API</a></li>
+        <li><a href="./mypage_info.html">마이페이지</a></li>
+        <li><a href="./store.html">상품소개</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =-=-=-=-=-=-=-=-=-=-= section#viewBox =-=-=-=-=-=-=-=-=-=-= -->
+  <div class="content">
+    <div class="menuBox">
+      <dl class="tabs">
+        <dt>마이페이지</dt>
+        <dd><a href="./mypage_info.html">기본등록정보</a></dd>
+        <dd><a href="./mypage_deal.html">거래등록정보</a></dd>
+        <dd><a href="./mypage_store.html">상품구매내역</a></dd>
+        <dd><a href="./mypage_data.html">소명자료요청</a></dd>
+        <dd class="current"><a href="./mypage_calculate.html">정산요청</a></dd>
+        <dd><a href="./mypage_qna.html">상담내역</a></dd>
+      </dl>
+    </div>
+
+    <div class="viewBox">
+      <h2>정산요청</h2>
+        <div class="title_line"></div>
+
+        <div class="caBox">
+          <dl>
+            <dt>출금가능</dt>
+            <dd><span class="dd_span">0</span> KRW</dd>
+            <dt>출금한도</dt>
+            <dd><span class="dd_span">200,000,000</span> KRW</dd>
+
+            <div class="line"></div>
+
+            <dt>출금계좌</dt>
+            <dd>
+              <select name="출금계좌">
+                <option value="">케이뱅크 10***-*****-***</option>
+                <option value="농협">농협 10***-*****-***</option>
+                <option value="국민">국민 10***-*****-***</option>
+                <option value="신한">신한 10***-*****-***</option>
+              </select>
+            </dd>
+            <dt>출금금액</dt>
+            <dd class="ca_dd">
+              <input type="text" placeholder="최소 10만원 이상 가능합니다.">
+
+              <ul class="tabs">
+                <li>10%</li>
+                <li>25%</li>
+                <li>50%</li>
+                <li>100%</li>
+              </ul>
+            </dd>
+
+            <div class="line"></div>
+
+            <dt>출금수수료(부가세 포함)</dt>
+            <dd>1,000 KRW</dd>
+            <dt>총 출금(수수료 포함)</dt>
+            <dd>1,000 KRW</dd>
+
+            <div class="line"></div>
+
+          </dl>
+
+          <div class="ca_p">
+            <p>- 타인의 지시나 요청 등에 의해 본인 명의의 계정을 타인에게 대여시 법적 처벌 대상이 될 수 있습니다.</p>
+            <p>- 실명 인증된 계정을 타인에게 대여하는 경우 개인정보 노출 위험에 처할 수 있습니다.</p>
+            <p>- 은행 점검시간 (매일 23:00~02:00)에는 출금 서비스 이용이 원활하지 않을 수 있습니다.</p>
+            <p>- 부정거래가 의심될 경우 출금이 제한될 수 있습니다.</p>
+          </div>
+
+          <div class="ca_btn">
+            <button type="button">출금신청</button>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+<!--script -->
+<script src="../../js/base/jquery-3.5.1.min.js"></script>
+<script src="../../js/base/jquery-ui.min.js"></script>
+
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+<script src="../../js/src/main/mypage.js"></script>
+</body>
+</html>

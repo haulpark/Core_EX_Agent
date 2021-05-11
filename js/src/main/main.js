@@ -15,6 +15,15 @@ $('.close_btn').click(function(e){
   $('.mob_menuBar').toggle("slide");
 })
 
+$('.dd_mypage').click(function(e){
+  e.preventDefault();
+
+  $('.dl_mypage').find('dd').slideToggle();
+
+  $('.menu_img').css({"transform":"rotate(180deg)"});
+
+})
+
 
 
 
