@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="../../css/src/main/mypage.css">
+<link rel="stylesheet" href="../../css/src/main/mypage_qna.css">
 
 <!--[if IE]>
 <script src="./ie/html5shive/dist/html5shive.min.js"></script>
@@ -23,23 +23,52 @@
 <body>
 <!-- layout -->
 <div id="wrap">
-  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
-  <header id="headBox">
-    <h1>
-      <div class="logo"></div>
-      <span>Core EX Agent</span>
-    </h1>
 
-    <nav id="gnb">
+  <div class="mob_menuBar">
+    <div class="menu">
+      <div class="close_btn"></div>
+
       <ul>
         <li><a href="./main.html">메인</a></li>
         <li><a href="./deal.html">내역</a></li>
         <li><a href="./wallet.html">지갑</a></li>
         <li><a href="./api.html">API</a></li>
-        <li><a href="./mypage_info.html">마이페이지</a></li>
+        <li>
+          <dl class="dl_mypage">
+            <dt class="dd_mypage"><span>마이페이지</span><div class="menu_img"></div></dt>
+            <dd><a href="./mypage_info.html">기본등록정보</a></dd>
+            <dd><a href="./mypage_deal.html">거래등록정보</a></dd>
+            <dd><a href="./mypage_store.html">상품구매내역</a></dd>
+            <dd><a href="./mypage_data.html">소명자료요청</a></dd>
+            <dd><a href="./mypage_calculate.html">정산요청</a></dd>
+            <dd><a href="./mypage_qna.html">상담내역</a></dd>
+          </dl>
+        </li>
         <li><a href="./store.html">상품소개</a></li>
       </ul>
-    </nav>
+    </div>
+  </div>
+  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
+  <header id="headBox">
+    <div class="div">
+      <div class="mob_menu"> </div>
+
+      <h1>
+        <div class="logo"></div>
+        <span>Core EX Agent</span>
+      </h1>
+
+      <nav id="gnb">
+        <ul>
+          <li><a href="./main.html">메인</a></li>
+          <li><a href="./deal.html">내역</a></li>
+          <li><a href="./wallet.html">지갑</a></li>
+          <li><a href="./api.html">API</a></li>
+          <li><a href="./mypage_info.html">마이페이지</a></li>
+          <li><a href="./store.html">상품소개</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- =-=-=-=-=-=-=-=-=-=-= section#viewBox =-=-=-=-=-=-=-=-=-=-= -->
@@ -198,6 +227,7 @@
 
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
 
+<script src="../../js/src/main/main.js"></script>
 <script src="../../js/src/main/mypage.js"></script>
 </body>
 </html>

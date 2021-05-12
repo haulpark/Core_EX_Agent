@@ -1,0 +1,456 @@
+/* mypage_qna.css (상담내역) */
+
+/* ======== 기본설정 ======== */
+
+html {scroll-behavior: smooth;}
+
+#wrap{width:100%; height:100%; background-color: #F8F8F8;}
+
+h2{font-family:paybooc-B; font-size:12pt;}
+.title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
+
+.mob_menu{display:none;}
+.mob_menuBar{display:none;}
+
+/* ===================== #headBox ======================== */
+
+#headBox{
+  width:100%; height:100px;
+  background-color: #fff;
+  border-bottom: 2px solid #f5f6f7;
+  padding:25px 0px; box-sizing: border-box;
+}
+
+  .div{
+    width:1400px; height:auto;
+    margin:auto;
+  } 
+
+  h1{
+    float:left;
+    width:340px; height:60px;
+    font-family: paybooc-B;
+    margin-top:0;}
+
+    .logo{
+      float:left;
+      width:128px; height:60px;
+      background-image: url(../../../img/image/corepay_logo.png);
+      background-position: 50% 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    
+    h1 > span{
+      float:left; 
+      font-size:20pt; color:#4694D1; 
+      line-height: 50px; margin-left: 10px;}
+
+
+  #gnb{
+    float:right; 
+    width:540px; height:50px; 
+    font-family: paybooc-M;
+  }
+
+    #gnb ul{width:100%; height:100%;}
+    #gnb ul li{
+      float:left; width:90px; height:100%; 
+      line-height: 50px; font-size:12pt;
+      text-align: center; color:#333;
+    }
+
+    #gnb ul li a {color:#333;}
+    #gnb ul li:nth-child(5) a {color:#4694D1; font-weight: bold;}
+
+/* ===================== #menuBox ======================== */
+  .content{
+    width:1400px; height:auto;
+    margin:auto; margin-top: 30px;
+  }
+
+  .menuBox{
+    float:left;
+    width:160px; height:324px;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem #ccc;
+  }
+
+    .menuBox > dl {width:100%; height:100%; text-align: center; font-family: payBooc-M;}
+    .menuBox > dl > dt{width:100%; height:60px; line-height:60px; background-color: #8A8A8A; color:#fff; font-family: payBooc-B;}
+    .menuBox > dl > dd{width:100%; height:44px; line-height:44px; font-size: 0.9rem; border-bottom:1px solid #D4D4D4; box-sizing: border-box;}
+    .menuBox > dl > dd:last-child{border-bottom: 0;}
+    
+    
+    dl.tabs dd a{color:#333;}
+
+    dl.tabs dd.current a{
+      color:#4694D1;
+      font-family: payBooc-B;
+    }
+
+/* ===================== #viewBox ======================== */
+  .viewBox{
+    float:right;
+    width:1200px; height:800px;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem #ccc;
+    padding:24px 44px; box-sizing: border-box;
+  }
+
+  #conBox{
+    width:1000px; height:800px;
+    margin:auto; margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem #ccc;
+    padding:36px 44px; box-sizing: border-box;
+   }
+  
+    .con_content{width:1000px; margin:auto; padding-top:50px; box-sizing: border-box;}
+  
+    .panel-t{width:100%; height:30px;}
+    .panel-t > ul{width:100%; height:100%;}
+    .panel-t > ul > li {float:left; text-align: center; line-height:15px; font-size:12pt;}
+    .panel-t > ul > li:nth-child(1){width:10%;}
+    .panel-t > ul > li:nth-child(2){width:50%;}
+    .panel-t > ul > li:nth-child(3){width:10%;}
+    .panel-t > ul > li:nth-child(4){width:10%;}
+    .panel-t > ul > li:nth-child(5){width:10%;}
+    .panel-t > ul > li:nth-child(6){width:10%;}
+  
+    .panel-heading{padding:0; height:50px;}
+    .panel-title > ul{width:100%; margin:0; padding:0; }
+    .panel-title > ul > li{float:left; height:100%; line-height:50px; text-align: center; font-size:11pt; font-weight: normal;}
+    .panel-title > ul > li:nth-child(1){width:10%;}
+    .panel-title > ul > li:nth-child(2){width:50%;}
+    .panel-title > ul > li:nth-child(3){width:10%;}
+    .panel-title > ul > li:nth-child(4){width:10%;}
+    .panel-title > ul > li:nth-child(5){width:10%;}
+    .panel-title > ul > li:nth-child(6){width:10%;}
+
+    .p_indicator{
+      width:180px; height:60px;
+      margin:auto; margin-top: 20px;
+    } 
+  
+    .p_indicator ul{width:100%; height:100%}
+    .p_indicator li{float:left; width:20px; font-size:1rem; line-height: 60px;}
+  
+    .p_indicator a{color:#333;}
+
+/* ======================================= 반응형 ======================================= */
+/* ----------------------- 모바일 (~640px) -------------------- */
+@media screen and (max-width: 640px) {
+
+  #wrap{position: relative; width:100%; height:1050px;}
+  h2{font-size:11pt;}
+  .title_line{margin:20px 0 0 0;}
+
+  .mob_menuBar{
+    position: absolute; z-index:10000;
+    width:100%; height:100%;
+  }
+
+  .menu{
+    width:300px; height:100%;
+    background-color: #fff;
+    padding-top:30px; box-sizing: border-box;
+  }
+    .close_btn{
+      width:24px; height:24px;
+      margin-left: 250px;
+      background-image: url(../../../img/icons/close.png);
+    }
+
+    .menu > ul {width:100%; height:500px; padding-top: 50px;}
+    .menu > ul > li {
+      width:100%; height:48px; line-height: 48px; font-size:12pt;
+      padding-left:20px; box-sizing: border-box;
+      font-family: payBooc-M;
+    }
+    .menu > ul > li:nth-child(5){height:auto; padding-left: 0;}
+
+    .menu > ul > li:hover{background-color: #F2F8FC;}
+    .menu > ul > li:hover a {color:#4694D1; }
+
+    .menu > ul > li:nth-child(5):hover{background-color: #fff;}
+
+    .menu > ul > li:nth-child(6){margin-top:-20px;}
+
+    .menu ul li a {color:#333;}
+    .menu ul li dl dd:nth-child(7) a{color:#4694D1;}
+    
+      .menu ul li dl {width:100%; height:auto;}
+      .menu ul li dl dt {
+        width:100%; height:48px; line-height: 48px;
+        padding-left:20px;
+      }
+
+      .menu ul li dl dt .menu_img{
+        float:right;
+        width:24px; height:24px;
+        margin-top: 12px; margin-right: 12px;
+        background-image: url(../../../img/icons/down.png);
+      }
+      .menu ul li dl dd {  
+        display: none;
+        width:100%; height:38px; line-height: 38px;
+        padding-left:30px; box-sizing: border-box;
+        font-size:0.9rem;
+      }
+
+      .menu ul li dl dd:hover{background-color: #F2F8FC;}
+      .menu ul li dl dd:hover a{color:#4694D1;}
+
+      .menu > ul > li:nth-child(5) {background-color: #fff;}
+      .menu > ul > li:nth-child(5) a {color:#333;}
+  /* ===================== #headBox ======================== */
+  #headBox{position: static;}
+
+    #headBox{
+      width:100%; height:56px;
+      padding:5px 20px; box-sizing: border-box;
+      margin:auto;
+    }
+
+      .div{width:100%; height:100%;}
+
+        h1{
+          float:none;
+          width:205px; height:50px;
+          margin:auto;
+        }
+
+          .logo{
+            float:left;
+            width:80px; height:50px;
+            background-image: url(../../../img/image/corepay_logo.png);
+            background-position: 50% 50%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+          }
+          
+          h1 > span{margin-left: 5px; font-size:12pt;}
+
+  #gnb{display:none;}
+
+  .mob_menu{
+    display:block;
+    float:left; width:24px; height:24px; margin-top:12px;
+    background-image: url(../../../img/icons/mob_menu.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  /* ===================== #menuBox ======================== */
+  .content{
+    width:100%; height:auto;
+    margin:auto; margin-top: 30px;
+  }
+
+  .menuBox{
+    display:none;
+  }
+
+  /* ===================== #viewBox ======================== */
+  .viewBox{
+    float:none;
+    width:100%;  height:920px;
+  }
+  
+  .con_content{
+    width:100%; height:auto; padding-top:20px; box-sizing: border-box;}
+
+  .panel-t{width:100%; height:30px;}
+    .panel-t > ul{width:100%; height:100%;}
+    .panel-t > ul > li {float:left; text-align: center; line-height:15px; font-size:0.8rem;}
+    .panel-t > ul > li:nth-child(1){display:none;}
+    .panel-t > ul > li:nth-child(2){width:60%;}
+    .panel-t > ul > li:nth-child(3){width:20%;}
+    .panel-t > ul > li:nth-child(4){display:none;}
+    .panel-t > ul > li:nth-child(5){display:none;}
+    .panel-t > ul > li:nth-child(6){width:20%;}
+  
+    .panel-heading{padding:0; height:50px;}
+    .panel-title > ul{width:100%; margin:0; padding:0; }
+    .panel-title > ul > li{float:left; height:100%; line-height:50px; text-align: center; font-size:0.8rem; font-weight: normal;}
+    .panel-title > ul > li:nth-child(1){display:none;}
+    .panel-title > ul > li:nth-child(2){width:60%;}
+    .panel-title > ul > li:nth-child(3){width:20%;}
+    .panel-title > ul > li:nth-child(4){display:none;}
+    .panel-title > ul > li:nth-child(5){display:none;}
+    .panel-title > ul > li:nth-child(6){width:20%;}
+
+    .p_indicator{
+      width:180px; height:60px;
+      margin:auto; margin-top: 20px;
+    } 
+  
+    .p_indicator ul{width:100%; height:100%}
+    .p_indicator li{float:left; width:20px; font-size:0.9rem; line-height: 60px;}
+  
+    .p_indicator a{color:#333;}
+
+}
+
+/* -------------------- 태블릿 (641px ~ 1080px) ------------------ */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+  #wrap{height:930px;}
+  h2{font-size:11pt;}
+  .title_line{margin:20px 0 0 0;}
+
+    #headBox{
+      width:100%; height:80px;
+      padding:15px 10px; box-sizing: border-box;
+      margin:auto;
+    }
+
+      .div{width:100%; height:100%;}
+
+        h1{
+          float:left;
+          width:210px; height:50px;
+          font-family: paybooc-B;
+          margin-top:0;}
+
+          .logo{
+            float:left;
+            width:80px; height:50px;
+            background-image: url(../../../img/image/corepay_logo.png);
+            background-position: 50% 50%;
+            background-size: 90%;
+            background-repeat: no-repeat;
+          }
+          
+          h1 > span{font-size:12pt;}
+
+
+        #gnb{
+          float:right; 
+          width:360px; height:50px; 
+          font-family: paybooc-M;
+        }
+
+          #gnb ul{width:100%; height:100%;}
+          #gnb ul li{
+            float:left; width:60px; height:100%; 
+            line-height: 50px; font-size:9pt;
+            text-align: center; color:#333;
+          }
+
+  /* ===================== #menuBox ======================== */
+  .content{
+    width:100%; height:auto;
+    margin:auto; margin-top: 30px;
+  }
+
+  .menuBox{
+    float:left; width:18%; 
+  }
+
+  /* ===================== #viewBox ======================== */
+  .viewBox{
+    float:right;
+    width:80%;  height:800px;
+  }
+
+  #conBox{
+    width:100%; height:auto;
+   }
+  
+   .con_content{
+    width:100%; height:auto; padding-top:20px; box-sizing: border-box;}
+
+  .panel-t{width:100%; height:30px;}
+    .panel-t > ul{width:100%; height:100%;}
+    .panel-t > ul > li {float:left; text-align: center; line-height:15px; font-size:0.8rem;}
+    .panel-t > ul > li:nth-child(1){width:5%;}
+    .panel-t > ul > li:nth-child(2){width:51%;}
+    .panel-t > ul > li:nth-child(3){width:11%;}
+    .panel-t > ul > li:nth-child(4){width:11%;}
+    .panel-t > ul > li:nth-child(5){width:11%;}
+    .panel-t > ul > li:nth-child(6){width:11%;}
+  
+    .panel-heading{padding:0; height:50px;}
+    .panel-title > ul{width:100%; margin:0; padding:0; }
+    .panel-title > ul > li{float:left; height:100%; line-height:50px; text-align: center; font-size:0.8rem; font-weight: normal;}
+    .panel-title > ul > li:nth-child(1){width:5%;}
+    .panel-title > ul > li:nth-child(2){width:51%;}
+    .panel-title > ul > li:nth-child(3){width:11%;}
+    .panel-title > ul > li:nth-child(4){width:11%;}
+    .panel-title > ul > li:nth-child(5){width:11%;}
+    .panel-title > ul > li:nth-child(6){width:11%;}
+
+
+}
+
+/* -------------------- 랩탑 (1081px ~ 1400px) ------------------ */
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+
+  #wrap{height:840px;}
+
+  /* ===================== #headBox ======================== */
+  #headBox{
+    width:100%; height:80px;
+    padding:15px 20px; box-sizing: border-box;
+    margin:auto;
+  }
+
+  .div{width:100%; height:100%;}
+
+    h1{
+      float:left;
+      width:340px; height:50px;
+      font-family: paybooc-B;
+      margin-top:0;}
+
+      .logo{
+        float:left;
+        width:100px; height:50px;
+        background-image: url(../../../img/image/corepay_logo.png);
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      
+      h1 > span{font-size:18pt;}
+
+
+    #gnb{
+      float:right; 
+      width:540px; height:50px; 
+      font-family: paybooc-M;
+    }
+
+      #gnb ul{width:100%; height:100%;}
+      #gnb ul li{
+        float:left; width:90px; height:100%; 
+        line-height: 50px; font-size:11pt;
+        text-align: center; color:#333;
+      }
+
+/* ===================== #menuBox ======================== */
+  .content{
+    width:100%; height:auto;
+    margin:auto; margin-top: 30px;
+  }
+
+  .menuBox{
+    float:left; width:12%; 
+  }
+
+  /* ===================== #viewBox ======================== */
+  .viewBox{
+    float:right;
+    width:86%; 
+  }
+
+    #conBox{
+      width:100%; height:800px;
+     }
+    
+      .con_content{width:100%; margin:auto; padding-top:10px; box-sizing: border-box;}
+  
+}
