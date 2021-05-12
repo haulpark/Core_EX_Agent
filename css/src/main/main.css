@@ -185,7 +185,7 @@ h2{font-family:paybooc-B; font-size:14pt;}
 
   .panel-heading{padding:0; height:50px;}
   .panel-title > ul{width:100%; margin:0; padding:0; }
-  .panel-title > ul > li{float:left; height:100%; line-height:50px; text-align: center; font-size:15pt; font-weight: normal;}
+  .panel-title > ul > li{float:left; height:100%; line-height:50px; text-align: center; font-size:10pt; font-weight: normal;}
   .panel-title > ul > li:nth-child(1){width:10%;}
   .panel-title > ul > li:nth-child(2){width:50%;}
   .panel-title > ul > li:nth-child(3){width:10%;}
@@ -360,20 +360,39 @@ h2{font-family:paybooc-B; font-size:14pt;}
     }
 
     .con_content{
-      width:100%; height:auto; padding-top:20px; box-sizing: border-box;
-      overflow-x:scroll; }
+      width:100%; height:auto; padding-top:20px; box-sizing: border-box;}
 
-      .panel-group{width:600px;}
+      .panel-group{width:100%;}
+        .panel-t{width:100%; height:30px;}
+        .panel-t > ul{width:100%; height:100%;}
+        .panel-t > ul > li {float:left; text-align: center; line-height:15px; font-size:0.9rem;}
+        .panel-t > ul > li:nth-child(1){display:none;}
+        .panel-t > ul > li:nth-child(2){width:60%;}
+        .panel-t > ul > li:nth-child(3){width:20%;}
+        .panel-t > ul > li:nth-child(4){display:none;}
+        .panel-t > ul > li:nth-child(5){display:none;}
+        .panel-t > ul > li:nth-child(6){width:20%;}
+      
+        .panel-heading{padding:0; height:50px;}
+        .panel-title > ul{width:100%; margin:0; padding:0; }
+        .panel-title > ul > li{float:left; height:100%; line-height:50px; text-align: center; font-size:0.8rem; font-weight: normal;}
+        .panel-title > ul > li:nth-child(1){display:none;}
+        .panel-title > ul > li:nth-child(2){width:60%;}
+        .panel-title > ul > li:nth-child(3){width:20%;}
+        .panel-title > ul > li:nth-child(4){display:none;}
+        .panel-title > ul > li:nth-child(5){display:none;}
+        .panel-title > ul > li:nth-child(6){width:20%;}
 
-
-      .panel-t{width:100%; height:30px;}
-      .panel-t > ul{width:100%; height:100%;}
-      .panel-t > ul > li {float:left; text-align: center; line-height:15px; font-size:10pt;}
-
-      .panel-heading{padding:0; height:40px;}
-      .panel-title > ul{width:100%; margin:0; padding:0; }
-      .panel-title > ul > li{float:left; height:100%; line-height:40px; text-align: center; font-size:0.875rem; font-weight: normal;}
-    }
+        .p_indicator{
+          width:180px; height:60px;
+          margin:auto; margin-top: 20px;
+        } 
+      
+        .p_indicator ul{width:100%; height:100%}
+        .p_indicator li{float:left; width:20px; font-size:0.9rem; line-height: 60px;}
+      
+        .p_indicator a{color:#333;}
+  }
   
 
   /* -------------------- 태블릿 (641px ~ 1080px) ------------------ */
@@ -480,15 +499,39 @@ h2{font-family:paybooc-B; font-size:14pt;}
 
     .con_content{
       width:100%; height:auto; padding-top:20px; box-sizing: border-box;}
-    }
 
-      .panel-t{width:100%; height:30px;}
-      .panel-t > ul{width:100%; height:100%;}
-      .panel-t > ul > li {float:left; text-align: center; line-height:15px; font-size:10pt;}
 
-      .panel-heading{padding:0; height:40px;}
-      .panel-title > ul{width:100%; margin:0; padding:0; }
-      .panel-title > ul > li{float:left; height:100%; line-height:40px; text-align: center; font-size:0.875rem; font-weight: normal;}
+    .panel-group{width:100%;}
+    .panel-t{width:100%; height:30px;}
+    .panel-t > ul{width:100%; height:100%;}
+    .panel-t > ul > li {float:left; text-align: center; line-height:15px; font-size:0.9rem;}
+    .panel-t > ul > li:nth-child(1){display:none;}
+    .panel-t > ul > li:nth-child(2){width:60%;}
+    .panel-t > ul > li:nth-child(3){width:20%;}
+    .panel-t > ul > li:nth-child(4){display:none;}
+    .panel-t > ul > li:nth-child(5){display:none;}
+    .panel-t > ul > li:nth-child(6){width:20%;}
+  
+    .panel-heading{padding:0; height:50px;}
+    .panel-title > ul{width:100%; margin:0; padding:0; }
+    .panel-title > ul > li{float:left; height:100%; line-height:50px; text-align: center; font-size:0.8rem; font-weight: normal;}
+    .panel-title > ul > li:nth-child(1){display:none;}
+    .panel-title > ul > li:nth-child(2){width:60%;}
+    .panel-title > ul > li:nth-child(3){width:20%;}
+    .panel-title > ul > li:nth-child(4){display:none;}
+    .panel-title > ul > li:nth-child(5){display:none;}
+    .panel-title > ul > li:nth-child(6){width:20%;}
+
+    .p_indicator{
+      width:180px; height:60px;
+      margin:auto; margin-top: 20px;
+    } 
+  
+    .p_indicator ul{width:100%; height:100%}
+    .p_indicator li{float:left; width:20px; font-size:0.9rem; line-height: 60px;}
+  
+    .p_indicator a{color:#333;}
+}
 
 /* -------------------- 랩탑 (1081px ~ 1400px) ------------------ */
 @media screen and (min-width: 1025px) and (max-width: 1400px) {
