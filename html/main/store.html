@@ -23,29 +23,94 @@
 <body>
 <!-- layout -->
 <div id="wrap">
-  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
-  <header id="headBox">
-    <h1>
-      <div class="logo"></div>
-      <span>Core EX Agent</span>
-    </h1>
 
-    <nav id="gnb">
+  <div class="mob_menuBar">
+    <div class="menu">
+      <div class="close_btn"></div>
+
       <ul>
         <li><a href="./main.html">메인</a></li>
         <li><a href="./deal.html">내역</a></li>
         <li><a href="./wallet.html">지갑</a></li>
         <li><a href="./api.html">API</a></li>
-        <li><a href="./mypage_info.html">마이페이지</a></li>
+        <li>
+          <dl class="dl_mypage">
+            <dt class="dd_mypage"><span>마이페이지</span><div class="menu_img"></div></dt>
+            <dd><a href="./mypage_info.html">기본등록정보</a></dd>
+            <dd><a href="./mypage_deal.html">거래등록정보</a></dd>
+            <dd><a href="./mypage_store.html">상품구매내역</a></dd>
+            <dd><a href="./mypage_data.html">소명자료요청</a></dd>
+            <dd><a href="./mypage_calculate.html">정산요청</a></dd>
+            <dd><a href="./mypage_qna.html">상담내역</a></dd>
+          </dl>
+        </li>
         <li><a href="./store.html">상품소개</a></li>
       </ul>
-    </nav>
+    </div>
+  </div>
+  <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
+  <header id="headBox">
+    <div class="div">
+
+      <div class="mob_menu"></div>
+
+      <h1>
+        <div class="logo"></div>
+        <span>Core EX Agent</span>
+      </h1>
+
+      <nav id="gnb">
+        <ul>
+          <li><a href="./main.html">메인</a></li>
+          <li><a href="./deal.html">내역</a></li>
+          <li><a href="./wallet.html">지갑</a></li>
+          <li><a href="./api.html">API</a></li>
+          <li><a href="./mypage_info.html">마이페이지</a></li>
+          <li><a href="./store.html">상품소개</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- =-=-=-=-=-=-=-=-=-=-= section#viewBox =-=-=-=-=-=-=-=-=-=-= -->
   <div class="viewBox">
+
+    <!-- 스토어 모달 창 -->
+    <div class="store_modal">
+      <div class="store_modal_content">
+        <p id="store_modal_title"> 30일 Free IP </p>
+        <br />
+        <p id="store_modal_ex"> 30일 Free IP에 대한 설명글입니다. </p>
+
+        <div class="store_btn">
+          <button type="button" class="store_exit">닫기</button>
+          <button type="button" class="store_credit">결제</button>
+        </div>
+      </div>
+    </div>
+    <!-- 스토어 결제 창 -->
+    <div class="store_modal_credit">
+      <p id="store_modal_credit_title"> 결제창입니다. </p>
+        
+      <div class="store_btn">
+        <button type="button" class="store_exit">닫기</button>
+        <button type="button" class="store_credit">결제</button>
+      </div>
+    </div>
+
+
     <h2>상품 안내</h2>
     <div class="title_line"></div>
+
+    <div class="content">
+      <div class="storeList">
+        <ul>
+          <li class="store_content_1"><span>수수료 인하권 <br /> (7%)</span></li>
+          <li class="store_content_2"><span>수수료 인하권 <br /> (5%)</span></li>
+          <li class="store_content_3"><span>수수료 인하권 <br /> (3%)</span></li>
+        </ul>
+      </div>
+    </div>
 
   </div>
 </div>
@@ -55,6 +120,7 @@
 
 <script src="../../bootstrap/js/bootstrap.min.js"></script>
 
+<script src="../../js/src/main/main.js"></script>
 <script src="../../js/src/main/store.js"></script>
 </body>
 </html>
