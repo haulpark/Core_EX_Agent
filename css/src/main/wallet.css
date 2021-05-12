@@ -143,7 +143,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
       background-image: url(../../../img/icons/close.png);
     }
 
-    .menu > ul {width:100%; height:500px; padding-top: 80px;}
+    .menu > ul {width:100%; height:500px; padding-top: 50px;}
       .menu > ul > li {
         width:100%; height:48px; line-height: 48px; font-size:12pt;
         padding-left:20px; box-sizing: border-box;
@@ -227,42 +227,45 @@ h2{font-family:paybooc-B; font-size:12pt;}
 
   /* ===================== #viewBox ======================== */
   .viewBox{
-    width:100%; height:720px;
+    width:100%; height:900px;
     margin:auto; 
     margin-top: 20px;
     padding:15px; box-sizing: border-box;
   }
 
     .coinBox{
-      width:100%; height:300px;
+      width:100%; height:440px;
       background-color: #fff;
       margin-top: 10px;
       padding:10px 0; box-sizing: border-box;
     }
 
       .coinBox > table {width:100%; height:auto;}
+      .coinBox > table > tbody > tr{border:1px solid #fff; height:30px;}
       .coinBox > table > tbody > tr > th, td{border:1px solid #fff; height:30px;}
-      .coinBox > table > tbody > tr > th{font-family:payBooc-B;}
-      .coinBox > table > tbody > tr > td{font-family:payBooc-M; text-align: right;}
+      .coinBox > table > tbody > tr > th{font-family:payBooc-B; font-size:0.9rem;}
+      .coinBox > table > tbody > tr > td{font-family:payBooc-M; text-align: right; font-size:0.8rem;}
 
-      .coinBox > table > tbody > tr > .coin_tr_title{font-size:1rem;}
+      .coinBox > table > tbody > tr > .coin_tr_title{font-size:0.95rem;}
 
-      .coinBox > table > tbody > tr > td > span {font-size:1rem;}
+      .coinBox > table > tbody > tr > td > span {font-size:0.9rem;}
 
-      .coinBox > p {margin:20px 0; font-family: nanum;}
+      .coinBox > p {margin:20px 0; font-family: payBooc-M; font-size:0.9rem; word-break: keep-all; }
 
-      .saleBox{width:90%; height:auto; margin:50px auto 0 auto;}
-        .saleBox > select{width:200px; height:40px; border:1px solid #D4D4D4; padding-left:10px; box-sizing: border-box; color:#777; outline: 2px solid #4694D1; font-family: nanum;}
-        .saleBox > button {float:right; width:100px; height:40px; background-color: #4694D1; color:#fff; font-family: nanum; font-size:0.9rem;}
+      /* mob table 크기 수정 */ 
+      .coinBox > table > tbody > tr > .mob_th{float:left; width:30%; height:50px;}
+      .coinBox > table > tbody > tr > .mob_td{float:left; width:70%; height:50px;} 
+      .coinBox > table > tbody > tr > .mob_no{display:none;}
+      /*-------------------*/
+
+      .saleBox{width:300px; height:auto; margin:30px auto 30px auto;}
+        .saleBox > select{float:left; width:180px; margin-right:10px;  height:40px; border:1px solid #D4D4D4; padding-left:10px; box-sizing: border-box; color:#777; outline: 0; font-family: nanum;}
+        .saleBox > button {float:left; width:100px; height:40px; background-color: #4694D1; color:#fff; font-family: nanum; font-size:0.9rem;}
 
     .coin_list{display:none;}
-    .mob_coin_list{
-      display:block;
-      width:100%; height:auto;
-    }
-      .mob_coin_list > p {font-size:0.875rem; float:right;}
-
-      .mob_coin_list{width:100%; height:auto; margin-top: 10px;}
+      
+      .mob_coin_list{display:block; width:100%; height:auto; margin-top: 30px;}
+      .mob_coin_list > p {font-size:0.875rem; float:right; font-family: payBooc-M;}
 
       .mob_coin_list > table{
         width:100%; height:auto; font-family: payBook-B; text-align: center;
@@ -271,7 +274,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
       .mob_coin_list > table > thead > tr > th {
         height:30px; text-align: center;
         background-color: #EFEFEF;
-        border:none; 
+        border:none; font-family: payBooc-B; font-size:0.9rem;
       }
 
       .mob_coin_list > table > thead > tr > th:nth-child(1){width:33.3333%;}
@@ -282,7 +285,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
       .mob_coin_list > table > tbody > tr {border: 1px solid #d4d4d4;}
 
       .mob_coin_list > table > tbody > tr > td{
-        border:none; height:30px;
+        border:none; height:30px; font-family: payBooc-M; font-size:0.875rem;
       }
 
     
