@@ -8,6 +8,8 @@ html {scroll-behavior: smooth;}
 h2{font-family:paybooc-B; font-size:14pt;}
 .title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
 
+.mob_info_content{display: none;}
+
 /* ===================== #headBox ======================== */
 
 #headBox{
@@ -335,23 +337,21 @@ h2{font-family:paybooc-B; font-size:14pt;}
 
     /* ===================== #infoBox ======================== */
     #infoBox{
-      width:100%; margin:auto; height:500px;
+      width:100%; margin:auto; height:550px;
       padding:10px 24px; box-sizing: border-box;
     }
 
-      .info_content{
-        width:100%; height:auto; margin:20px auto;
-        overflow-x:scroll;
-      }
+      .info_content{display:none;}
+      .mob_info_content{display:block; width:100%; height:auto;}
 
-      #periodBox{width:600px; height:auto;}
+      #periodBox{width:100%; height:auto; margin-top: 20px;}
 
         #periodBox > thead > tr > th {height:30px; font-size:0.9rem;}
         #periodBox > tbody > tr > td {height:30px; font-size:0.875rem;}
 
         #periodBox > tbody > tr > td{text-align: center; border:1px solid #D4D4D4; }
-        #periodBox > tbody > tr > td:nth-child(5){text-align: right; padding-right:10px; box-sizing: border-box;}
 
+        .td_blue{color:#4694D1;}
 
     /* ===================== #conBox ======================== */
     #conBox{width:100%; margin-top: 20px;
