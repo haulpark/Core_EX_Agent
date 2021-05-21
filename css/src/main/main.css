@@ -229,7 +229,7 @@ h2{font-family:paybooc-B; font-size:14pt;}
       .menu > ul > li:nth-child(5){height:auto; padding-left: 0;}
 
       .menu > ul > li:hover{background-color: #F2F8FC;}
-      .menu > ul > li:hover a {color:#4694D1; }
+      .menu > ul > li:hover a {color:#4694D1;}
 
       .menu > ul > li:nth-child(5):hover{background-color: #fff;}
 
