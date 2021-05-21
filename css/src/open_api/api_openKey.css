@@ -68,13 +68,13 @@ h2{font-family:paybooc-B; font-size:12pt;}
 #issuedBox{
   display:none;
   position: absolute; z-index:10001;
-  width:100%; height:880px;
+  width:100%; height:920px;
   background-color: rgba(0,0,0, 0.7);
 }
 
   .issued{
     position: absolute;
-    width:850px; height:400px; background-color: #fff;
+    width:850px; height:450px; background-color: #fff;
     top:0; bottom:0; right:0; left:0; margin:auto;
   }
 
@@ -90,10 +90,10 @@ h2{font-family:paybooc-B; font-size:12pt;}
     .text{
       width:100%; height:auto;
       text-align: center;
-      margin-top: 80px;
+      margin-top: 60px;
     }
 
-    .text_p{font-size:1.2rem; font-weight: 500;}
+    .text_p{font-size:1.2rem; font-weight: 600;}
 
     .text > span{
       display:inline-block;
@@ -101,19 +101,25 @@ h2{font-family:paybooc-B; font-size:12pt;}
     }
 
     .keyBox{
-      width:540px; height:140px; margin:auto;
-      margin-top: 50px;
+      width:600px; height:140px; margin:auto;
+      margin-top: 20px; border:2px solid #ccc;
+      padding:25px 0; box-sizing: border-box;
+      text-align: center;
     }
 
     .keyBox > ul {width:100%; height:100%;}
     .keyBox > ul > li {width:100%; height:50px;}
 
     .keyBox > ul > li > span{display:inline-block; width:340px;}
-    .keyBox > ul > li > span.li_t{width:100px;}
+    .keyBox > ul > li > span.li_t{width:100px; font-weight: 500;}
+    .keyBox > ul > li > input {width:350px; border:1px solid #fff; outline:0;} 
 
     .keyBox > ul > li > button{width:80px; height:28px; font-size:0.9rem; background-color: #fff; border:1px solid #d4d4d4; border-radius: 5px;}
     
 
+    .scan_alarm {
+      display:none;
+      text-align: center; color:#4694D1; margin-top: 20px;}
 
 
 /* ===================== #viewBox ======================== */
@@ -151,15 +157,13 @@ h2{font-family:paybooc-B; font-size:12pt;}
     .check > ul > li{float:left; width:180px; height:50px;}
     .check > ul > li > input[type="checkbox"] {float:left; margin-right: 10px;}
 
-    .check > ul > li:last-child{width:100%;}
-    .check > ul > li > input[type="text"] {width:400px; margin-left: 10px; border:1px solid #d4d4d4; outline:none; font-size:0.9rem;}
+    .check > ul > li:last-child > input[type="checkbox"] {margin-top:10px;}
+    .check > ul > li:last-child{width:100%; line-height: 30px;}
+    .check > ul > li > input[type="text"] {width:400px; height:30px; margin-left: 10px; border:1px solid #d4d4d4; outline:none; font-size:0.9rem;}
 
-  .btn {
-    width:100%; height:40px; margin:auto; margin-top: 10px;
-  }
 
-    .btn > button{
-      width:200px; height:40px;
+  .api_issued{
+      width:200px; height:40px; margin:auto;
       border-radius: 5px; color:#fff; background-color: #4694D1;}
 
   .openkey_ex{

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="../../css/base/reset.css">
 <link rel="stylesheet" href="../../css/base/common.css">
 
-<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
 
 <link rel="stylesheet" href="../../css/src/open_api/api_openKey.css">
 
@@ -78,16 +78,18 @@
           <p class="text_p">Open API Key 발급 완료</p>
           <br />
           <span>회원님의 Open API Key가 아래와 같이 발급되었습니다.</span>
-          <span>Scret Key는 최초 1회에 한 해 발급되며 추가적으로 확인하실 수 없으니,</span>
+          <span>Sceret Key는 최초 1회에 한 해 발급되며 추가적으로 확인하실 수 없으니,</span>
           <span>발급 받으신 Secret Key는 반드시 안전한 곳에 별도로 보관하여 주시기 바랍니다.</span>
           <span>Open API Key 타인 양도시 발생하는 피해로 인한 책임은 본인에게 있습니다.</span>
         </div>
         <div class="keyBox">
           <ul>
-            <li><span class="li_t">Access Key</span> <span>vx76pptZMtiuxZa3guZxNHnf8kO4GYkNnFue5jT0</span> <button class="scan">복사하기</button></li>
-            <li><span class="li_t">Secret Key</span> <span>vx76pptZMtiuxZa3guZxNHnf8kO4GYkNnFue5jT0</span> <button class="scan">복사하기</button></li>
+            <li><span class="li_t">Access Key</span> <input id="ac_id" value="vx76pptZMtiuxZa3guZxNHnf8kO4GYkNnFue5jT0" readonly> <button class="scan acc_scan">복사하기</button></li>
+            <li><span class="li_t">Secret Key</span> <input id="se_id" value="ac76435tZM94oxa3gDZxNHnfOAZ4GYkNnFue5jT0" readonly> <button class="scan sec_scan">복사하기</button></li>
           </ul>
         </div>
+
+        <p class="scan_alarm">Secret Key가 복사되었습니다.</p>
       </div>
   </div>
 
@@ -119,15 +121,12 @@
           </ul>
         </div>
 
-        <div class="btn">
-          <button type="button" class="api_issued"> Open API 발급받기 </button>
-        </div>
+        <button type="button" class="api_issued"> Open API 발급받기 </button>
 
         <div class="openkey_ex">
          <p> - 원하는 기능을 선택하여 해당 기능 활용 가능한 Open API Key를 발급받을 수 있습니다. </p>
          <p> - 발급받으신 Open API Key는 각 Key 별로 특정 서버 IP 주소에서만 동작할 수 있도록 설정 가능하며, 별도로 IP주소를 지정하지 않으시면, IP 주소 제한 없이 Open API 기능을 이용할 수 있습니다. </p>
          <p> - 기능 선택과 IP 주소 제한 여부에 따라 별도의 Open API Key 발급이 가능하며, 하단의 Open API Key 관리 메뉴를 통해 관리 가능합니다. Open API Key 발급 및 삭제 시에는 2채널 추가 인증 </p>
-         <p> - (카카오페이)이 필요하며, 필요한 기능의 변경 발생시에는 하단 Open API Key 관리에서 해당 Key를 삭제하신 뒤 다시 등록해주시기 바랍니다. </p>
          <p> - Secret key는 최초 1회에 한해 발급되며 추가로 확인하실 수 없으니, 발급받으신 Secret key는 반드시 안전한 곳에 별도로 보관하여 주시기 바랍니다. </p>
          <p> - Open API Key 토큰의 유효 기간은 1년이며 연장은 불가합니다. 유효 기간 만료 후 Open API를 계속하여 사용하고자 하시는 분은 추가로 Open API Key를 발급받아 주시기 바랍니다. </p>
          <p> - Open API Key 토큰의 만료 기한은 Open API Key 관리 메뉴 내 Access key 하단 정보를 통해 확인 가능합니다. </p>
@@ -190,7 +189,7 @@
           <p> - Open API Key를 절대 타인에게 양도하지 마시기 바랍니다. 그에 따라 발생하는 피해에 대한 책임은 본인에게 있습니다.</p>
           <p> - 카카오톡 내 연결 끊기를 진행했을시, 고객센터 문의를 통하여 Open API Key 삭제를 요청해 주시기 바랍니다.</p>
           <p> - Open API Key 미삭제로 발생하는 금전적 손실의 책임은 본인에게 있습니다.</p>
-          <p> - 업비트 탈퇴하기를 통해 탈퇴 진행시에는 Open API Key가 삭제됩니다.</p>
+          <p> - Corepay 탈퇴하기를 통해 탈퇴 진행시에는 Open API Key가 삭제됩니다.</p>
          </div>
       </div>
 
