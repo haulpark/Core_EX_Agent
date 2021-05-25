@@ -24,6 +24,45 @@
 <!-- layout -->
 <div id="wrap">
 
+  <div class="sale_popup">
+    <div class="sale_popup_content">
+      <div class="sale_popup_close"></div>
+      <h3>간편자동판매</h3>
+
+      <dl>
+        <dt>코인</dt>
+        <dd>CRE</dd>
+
+        <dt>코인시세</dt>
+        <dd>1,200 ₩</dd>
+
+        <div class="line"></div>
+        
+        <dt>판매수량</dt>
+        <dd class="ca_dd">
+          <input type="text" name="percent" id="percent" onfocus="inInput(this)" onblur="outInput(this)"/>
+          <select onfocus="inInput(this)" onblur="outInput(this)" onChange="selpercent(this.value)">
+            <option onselect="focus">직접입력</option>
+            <option value="10%">10%</option>
+            <option value="30%">30%</option>
+            <option value="50%">50%</option>
+            <option value="100%">100%</option>
+          </select>
+        </dd>
+
+        <div class="line"></div>
+        <dt>예상판매금</dt>
+        <dd>0 ₩</dd>
+
+        <p class="alarm">* 간편자동판매시 거래금액의 x%의 수수료가 부과됩니다.</p>
+
+        <div class="btn">
+          <button type="submit" class="sale_popup_btn">판매</button>
+        </div>
+      </dl>
+    </div>
+  </div>
+
   <div class="mob_menuBar">
     <div class="menu">
       <div class="close_btn"></div>
@@ -81,42 +120,18 @@
       <table>
         <tbody>
           <tr>
-            <th class="coin_tr_title mob_th">보유 KRW</th>
-            <td class="coin_tr_title mob_td"><span>0</span> KRW</td>
-            <th class="mob_no">&nbsp;</th>
-            <td class="mob_no">&nbsp;</td>
-            <th class="mob_no">&nbsp;</th>
-            <td class="mob_no">&nbsp;</td>
-            <th class="mob_no">&nbsp;</th>
-            <td class="mob_no">&nbsp;</td>
+            <th class="coin_tr_title mob_th">보유 코인</th>
+            <td class="coin_tr_title mob_td"><span>100</span> CRE</td>
+          </tr>
+
+          <tr>
             <th class="coin_tr_title mob_th">총 보유자산</th>
             <td class="coin_tr_title mob_td"><span>0</span> KRW</td>
           </tr>
 
           <tr>
-            <th class="mob_th">총 매수금액</th>
-            <td class="mob_td"><span>0</span> KRW</td>
-            <th class="mob_no">&nbsp;</th>
-            <td class="mob_no">&nbsp;</td>
-            <th class="mob_no">&nbsp;</th>
-            <td class="mob_no">&nbsp;</td>
-            <th class="mob_no">&nbsp;</th>
-            <td class="mob_no">&nbsp;</td>
-            <th class="mob_th">총 평가손익</th>
-            <td class="mob_td"><span>0</span> KRW</td>
-          </tr>
-
-          <tr>
             <th class="mob_th">총 평가금액</th>
             <td class="mob_td"><span>0</span> KRW</td>
-            <th class="mob_no">&nbsp;</th>
-            <td class="mob_no">&nbsp;</td>
-            <th class="mob_no">&nbsp;</th>
-            <td class="mob_no">&nbsp;</td>
-            <th class="mob_no">&nbsp;</th>
-            <td class="mob_no">&nbsp;</td>
-            <th class="mob_th">총 평가수익률</th>
-            <td class="mob_td"><span>0</span> %</td>
           </tr>
         </tbody>
       </table>
@@ -125,13 +140,15 @@
 
       <div class="saleBox">
         <select name="판매량">
-          <option value="">판매량을 선택해주세요. </option>
-          <option value="10%">10%</option>
-          <option value="50%">50%</option>
-          <option value="100%">100%</option>
+          <option value="">판매코인을 선택해주세요. </option>
+          <option value="">CRE</option>
+          <option value="">WZS</option>
+          <option value="">WZC</option>
+          <option value="">DBIT</option>
+          <option value="">BIT</option>
         </select>
 
-        <button type="button">간편자동판매</button>
+        <button type="button" class="sale_btn">간편자동판매</button>
       </div>
     </div>
 
@@ -143,52 +160,40 @@
           <tr>
             <th>보유코인</th>
             <th>보유수량</th>
-            <th>매수평균가</th>
-            <th>매수금액</th>
-            <th>평가금액</th>
-            <th>평가손익</th>
+            <th>현 시세</th>
+            <th>평가금액(KRW)</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>CRE</td>
+            <td>2000</td>
+            <td>1,200 ₩</td>
+            <td>2,400,000 ₩</td>
           </tr>
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>WZS</td>
+            <td>1200</td>
+            <td>936 ₩</td>
+            <td>1,123,200 ₩</td>
           </tr>
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>WZC</td>
+            <td>1000</td>
+            <td>930 ₩</td>
+            <td>930,000 ₩</td>
           </tr>
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>DBIT</td>
+            <td>1000</td>
+            <td>900 ₩</td>
+            <td>900,000 ₩</td>
           </tr>
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>BIT</td>
+            <td>200</td>
+            <td>1,000 ₩</td>
+            <td>200,000 ₩</td>
           </tr>
         </tbody>
       </table>
@@ -204,47 +209,59 @@
           <tr>
             <th>보유코인</th>
             <th>보유 수</th>
-            <th>매수평균가</th>
           </tr>
           <tr>
-            <th>매수금액</th>
+            <th>현 시세</th>
             <th>평가금액</th>
-            <th>평가손익(%)</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>CRE</td>
+            <td>2000</td>
           </tr>
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td class="bar">1,200 ₩</td>
+            <td class="bar">2,400,000 ₩</td>
           </tr>
 
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>WZS</td>
+            <td>1200</td>
           </tr>
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td class="bar">936 ₩</td>
+            <td class="bar">1,123,200 ₩</td>
+          </tr>
+
+
+          <tr>
+            <td>WZS</td>
+            <td>1200</td>
+          </tr>
+          <tr>
+            <td>936 ₩</td>
+            <td>1,123,200 ₩</td>
+          </tr>
+
+
+          <tr>
+            <td>WZS</td>
+            <td>1200</td>
+          </tr>
+          <tr>
+            <td class="bar">936 ₩</td>
+            <td class="bar">1,123,200 ₩</td>
           </tr>
 
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td>WZS</td>
+            <td>1200</td>
           </tr>
           <tr>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
+            <td class="bar">936 ₩</td>
+            <td class="bar"> 1,123,200 ₩</td>
           </tr>
         </tbody>
       </table>

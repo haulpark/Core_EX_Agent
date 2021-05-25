@@ -4,7 +4,7 @@
 
 html {scroll-behavior: smooth;}
 
-#wrap{width:100%; height:100%; background-color: #F8F8F8;}
+#wrap{position: relative; width:100%; height:100%; background-color: #F8F8F8;}
 
 h2{font-family:paybooc-B; font-size:12pt;}
 .title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
@@ -13,6 +13,42 @@ h2{font-family:paybooc-B; font-size:12pt;}
 .mob_menuBar{display:none;}
 .mob_coin_list{display:none;}
 
+.sale_popup{
+  position: absolute; z-index:1000;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.7);
+}
+
+  .sale_popup_content{
+    position: absolute;
+    width:500px; height:450px;
+    top:0; right:0; left:0; bottom:0; margin:auto;
+    background-color: #fff;
+    padding:20px 40px; box-sizing: border-box;
+  }
+
+  .sale_popup_content > h3{font-size:14pt; text-align: center;}
+  .sale_popup_close{
+    position: absolute;
+    top:2%; right:2%;
+    width:24px; height:24px; 
+    background-image: url(../../../img/icons/close.png);
+  }
+
+  .sale_popup_content > dl {width:100%; height:auto; padding-top: 30px; font-family: payBooc-M;} 
+
+  .sale_popup_content > dl > dt{float:left; width:35%; height:40px;  line-height:40px; font-size:11pt; font-family:payBooc-B;}
+  .sale_popup_content > dl > dd{float:left; width:65%; height:40px; text-align: right; line-height:40px; font-size:11pt;}
+
+  .sale_popup_content > dl > .line{float:left; width:100%; height:2px; margin:10px 0;  background-color: #eee;}
+
+  .sale_popup_content > dl > .ca_dd > select {height:100%; border:1px solid #ccc; font-size:10pt;}
+
+  .sale_popup_content > dl > p.alarm {width:100%; height:50px; line-height:50px;}
+
+
+  .btn{width:100%; padding-top: 60px;}
+  button[type="submit"] {width:200px; height:32px; background-color: #4694D1; color:#fff; border-radius: 5px; margin:auto;}
 /* ===================== #headBox ======================== */
 
 #headBox{
@@ -78,7 +114,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
     margin:auto; margin-top: 50px;
   }
 
-    .coinBox > table {width:100%; height:auto;}
+    .coinBox > table {width:60%; height:auto; margin:auto;}
     .coinBox > table > tbody > tr > th, td{border:1px solid #fff; height:40px;}
     .coinBox > table > tbody > tr > th{font-family:payBooc-B;}
     .coinBox > table > tbody > tr > td{font-family:payBooc-M; text-align: right;}
@@ -87,7 +123,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
 
     .coinBox > table > tbody > tr > td > span {font-size:1.3rem;}
 
-    .coinBox > p {margin:20px 0; font-family: nanum;}
+    .coinBox > p {margin:20px 0; font-family: nanum; text-align: center;}
 
     .saleBox{width:500px; height:auto; margin:50px auto 0 auto;}
       .saleBox > select{width:360px; height:40px; border:1px solid #D4D4D4; padding-left:10px; box-sizing: border-box; color:#777; outline: 2px solid #4694D1; font-family: nanum;}
@@ -95,28 +131,31 @@ h2{font-family:paybooc-B; font-size:12pt;}
 
   .coin_list{
     width:1200px; height:auto;
-    margin:auto;
+    margin:auto; padding-top: 20px;
   }
 
   h3{font-family:paybooc-B; font-size:11pt;}
 
-  .coin_list{width:100%; height:auto; margin-top: 10px;}
+  .coin_list{width:50%; height:auto; margin-top: 10px;}
 
     .coin_list > table{
       width:100%; height:auto; font-family: payBook-B; text-align: center;
       border:1px solid #707070;
     }
     .coin_list > table > thead > tr > th {
-      height:30px; text-align: center;
+      width:25%; height:30px; text-align: center;
       background-color: #EFEFEF;
       border:none; 
     }
+
+    .coin_list > table > tbody > tr > td:nth-child(3) {text-align: right; padding-right: 10px;}
+    .coin_list > table > tbody > tr > td:nth-child(4) {text-align: right; padding-right: 10px;}
 
     .coin_list > table > thead > tr {border: 1px solid #d4d4d4;}
     .coin_list > table > tbody > tr {border: 1px solid #d4d4d4;}
 
     .coin_list > table > tbody > tr > td{
-      border:none; height:30px;
+      border:1px solid #d4d4d4; height:30px;
     }
 
 /* ======================================= 반응형 ======================================= */
@@ -124,67 +163,94 @@ h2{font-family:paybooc-B; font-size:12pt;}
 @media screen and (max-width: 640px) {
 
   #wrap{position: relative; width:100%; height:820px;}
-  h2{font-size:11pt;}
-  .title_line{margin:20px 0 0 0;}
 
-  .mob_menuBar{
-    position: absolute; z-index:10000;
-    width:100%; height:100%;
-  }
-
-  .menu{
-    width:300px; height:100%;
-    background-color: #fff;
-    padding-top:30px; box-sizing: border-box;
-  }
-    .close_btn{
-      width:24px; height:24px;
-      margin-left: 250px;
-      background-image: url(../../../img/icons/close.png);
+    .sale_popup_content{
+      position: absolute;
+      width:90%; height:500px;
+      top:0; right:0; left:0; bottom:0; margin:auto;
+      background-color: #fff;
+      padding:20px 40px; box-sizing: border-box;
     }
 
-    .menu > ul {width:100%; height:500px; padding-top: 50px;}
-      .menu > ul > li {
-        width:100%; height:48px; line-height: 48px; font-size:12pt;
-        padding-left:20px; box-sizing: border-box;
-        font-family: payBooc-M;
+      .sale_popup_content > h3{font-size:14pt; text-align: center;}
+      .sale_popup_close{
+        position: absolute;
+        top:2%; right:2%;
+        width:24px; height:24px; 
+        background-image: url(../../../img/icons/close.png);
       }
-      .menu > ul > li:nth-child(5){height:auto; padding-left: 0;}
 
-      .menu > ul > li:hover{background-color: #F2F8FC;}
-      .menu > ul > li:hover a {color:#4694D1; }
+        .sale_popup_content > dl > .ca_dd{height:85px;}
+        .sale_popup_content > dl > .ca_dd > input {float:right; width:140px;}
+        .sale_popup_content > dl > .ca_dd > select {float:right; width:140px; height:40px; margin-top: 5px; border:1px solid #ccc; font-size:10pt;}
 
-      .menu > ul > li:nth-child(5):hover{background-color: #fff;}
+        .sale_popup_content > dl > p.alarm {width:100%; height:50px; margin-top: 10px; line-height:20px; font-size:9pt;}
 
-      .menu > ul > li:nth-child(6){margin-top:-20px;}
 
-      .menu ul li a {color:#333;}
-      .menu ul li:nth-child(3) a{color:#4694D1;}
-      
-        .menu ul li dl {width:100%; height:auto;}
-        .menu ul li dl dt {
-          width:100%; height:48px; line-height: 48px;
-          padding-left:20px;
+        .btn{width:100%; padding-top: 60px;}
+        button[type="submit"] {width:200px; height:32px; background-color: #4694D1; color:#fff; border-radius: 5px; margin:auto;}
+
+    h2{font-size:11pt;}
+    .title_line{margin:20px 0 0 0;}
+
+    .mob_menuBar{
+      position: absolute; z-index:10000;
+      width:100%; height:100%;
+    }
+
+    .menu{
+      width:300px; height:100%;
+      background-color: #fff;
+      padding-top:30px; box-sizing: border-box;
+    }
+      .close_btn{
+        width:24px; height:24px;
+        margin-left: 250px;
+        background-image: url(../../../img/icons/close.png);
+      }
+
+      .menu > ul {width:100%; height:500px; padding-top: 50px;}
+        .menu > ul > li {
+          width:100%; height:48px; line-height: 48px; font-size:12pt;
+          padding-left:20px; box-sizing: border-box;
+          font-family: payBooc-M;
         }
+        .menu > ul > li:nth-child(5){height:auto; padding-left: 0;}
 
-        .menu ul li dl dt .menu_img{
-          float:right;
-          width:24px; height:24px;
-          margin-top: 12px; margin-right: 12px;
-          background-image: url(../../../img/icons/down.png);
-        }
-        .menu ul li dl dd {  
-          display: none;
-          width:100%; height:38px; line-height: 38px;
-          padding-left:30px; box-sizing: border-box;
-          font-size:0.9rem;
-        }
+        .menu > ul > li:hover{background-color: #F2F8FC;}
+        .menu > ul > li:hover a {color:#4694D1; }
 
-        .menu ul li dl dd:hover{background-color: #F2F8FC;}
-        .menu ul li dl dd:hover a{color:#4694D1;}
+        .menu > ul > li:nth-child(5):hover{background-color: #fff;}
 
-        .menu > ul > li:nth-child(5) {background-color: #fff;}
-        .menu > ul > li:nth-child(5) a {color:#333;}
+        .menu > ul > li:nth-child(6){margin-top:-20px;}
+
+        .menu ul li a {color:#333;}
+        .menu ul li:nth-child(3) a{color:#4694D1;}
+        
+          .menu ul li dl {width:100%; height:auto;}
+          .menu ul li dl dt {
+            width:100%; height:48px; line-height: 48px;
+            padding-left:20px;
+          }
+
+          .menu ul li dl dt .menu_img{
+            float:right;
+            width:24px; height:24px;
+            margin-top: 12px; margin-right: 12px;
+            background-image: url(../../../img/icons/down.png);
+          }
+          .menu ul li dl dd {  
+            display: none;
+            width:100%; height:38px; line-height: 38px;
+            padding-left:30px; box-sizing: border-box;
+            font-size:0.9rem;
+          }
+
+          .menu ul li dl dd:hover{background-color: #F2F8FC;}
+          .menu ul li dl dd:hover a{color:#4694D1;}
+
+          .menu > ul > li:nth-child(5) {background-color: #fff;}
+          .menu > ul > li:nth-child(5) a {color:#333;}
 
   /* ===================== #headBox ======================== */
   #headBox{position: static;}
@@ -227,14 +293,14 @@ h2{font-family:paybooc-B; font-size:12pt;}
 
   /* ===================== #viewBox ======================== */
   .viewBox{
-    width:100%; height:900px;
+    width:100%; height:auto;
     margin:auto; 
     margin-top: 20px;
     padding:15px; box-sizing: border-box;
   }
 
     .coinBox{
-      width:100%; height:440px;
+      width:100%; height:320px;
       background-color: #fff;
       margin-top: 10px;
       padding:10px 0; box-sizing: border-box;
@@ -258,13 +324,13 @@ h2{font-family:paybooc-B; font-size:12pt;}
       .coinBox > table > tbody > tr > .mob_no{display:none;}
       /*-------------------*/
 
-      .saleBox{width:300px; height:auto; margin:30px auto 30px auto;}
+      .saleBox{width:300px; height:auto; margin:30px auto 0 auto;}
         .saleBox > select{float:left; width:180px; margin-right:10px;  height:40px; border:1px solid #D4D4D4; padding-left:10px; box-sizing: border-box; color:#777; outline: 0; font-family: nanum;}
         .saleBox > button {float:left; width:100px; height:40px; background-color: #4694D1; color:#fff; font-family: nanum; font-size:0.9rem;}
 
     .coin_list{display:none;}
       
-      .mob_coin_list{display:block; width:100%; height:auto; margin-top: 30px;}
+      .mob_coin_list{display:block; width:100%; height:auto; margin-top: 0px;}
       .mob_coin_list > p {font-size:0.875rem; float:right; font-family: payBooc-M;}
 
       .mob_coin_list > table{
@@ -274,7 +340,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
       .mob_coin_list > table > thead > tr > th {
         height:30px; text-align: center;
         background-color: #EFEFEF;
-        border:none; font-family: payBooc-B; font-size:0.9rem;
+        border: 1px solid #d4d4d4; font-family: payBooc-B; font-size:0.9rem;
       }
 
       .mob_coin_list > table > thead > tr > th:nth-child(1){width:33.3333%;}
@@ -285,8 +351,12 @@ h2{font-family:paybooc-B; font-size:12pt;}
       .mob_coin_list > table > tbody > tr {border: 1px solid #d4d4d4;}
 
       .mob_coin_list > table > tbody > tr > td{
-        border:none; height:30px; font-family: payBooc-M; font-size:0.875rem;
+        border:1px solid #d4d4d4; height:30px; font-family: payBooc-M; font-size:0.875rem;
       }
+
+      .mob_coin_list > table > tbody > tr > td.bar {border-bottom: 2px solid #d4d4d4; font-family: payBooc-B;}
+
+
 
     
 }
@@ -354,6 +424,8 @@ h2{font-family:paybooc-B; font-size:12pt;}
   
       .coinBox > p {font-size:0.9rem;}
 
+      .coin_list{width:100%;}
+
 }
 
 /* -------------------- 랩탑 (1081px ~ 1400px) ------------------ */
@@ -413,6 +485,8 @@ h2{font-family:paybooc-B; font-size:12pt;}
       background-color: #fff;
       padding:24px 44px; box-sizing: border-box;
     }
+
+  
      
 
 }
