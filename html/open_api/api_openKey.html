@@ -23,36 +23,9 @@
 <body>
 <!-- layout -->
 <div id="wrap">
-
-  <div class="mob_menuBar">
-    <div class="menu">
-      <div class="close_btn"></div>
-
-      <ul>
-        <li><a href="./main.html">메인</a></li>
-        <li><a href="./deal.html">내역</a></li>
-        <li><a href="./wallet.html">지갑</a></li>
-        <li><a href="./api.html">API</a></li>
-        <li>
-          <dl class="dl_mypage">
-            <dt class="dd_mypage"><span>마이페이지</span><div class="menu_img"></div></dt>
-            <dd><a href="./mypage_info.html">기본등록정보</a></dd>
-            <dd><a href="./mypage_deal.html">거래등록정보</a></dd>
-            <dd><a href="./mypage_store.html">상품구매내역</a></dd>
-            <dd><a href="./mypage_data.html">소명자료요청</a></dd>
-            <dd><a href="./mypage_calculate.html">정산요청</a></dd>
-            <dd><a href="./mypage_qna.html">상담내역</a></dd>
-          </dl>
-        </li>
-        <li><a href="./store.html">상품소개</a></li>
-      </ul>
-    </div>
-  </div>
   <!-- =-=-=-=-=-=-=-=-=-=-= header#headBox =-=-=-=-=-=-=-=-=-=-= -->
   <header id="headBox">
     <div class="div">
-
-      <div class="mob_menu"> </div>
       <h1>
         <div class="logo"></div>
         <span>Core EX Agent</span>
@@ -95,57 +68,25 @@
 
   <!-- =-=-=-=-=-=-=-=-=-=-= section#viewBox =-=-=-=-=-=-=-=-=-=-= -->
   <div class="viewBox">
-    <h2>API 연동</h2>
-    <div class="title_line"></div> 
+    <div class="view_title">
+      <h2>OPEN API</h2>
+      <button type="button" class="api_issued"> Open API 발급받기 </button>
+      <div class="title_line"></div> 
+    </div>
 
     <div class="content">
-      <div class="category">
-        <ul>
-          <li><a href="./api_openKey.html">Open API Key 관리</a></li>
-          <li><a href="./api_management.html">디지털 자산 출금주소 관리</a></li>
-        </ul>
-      </div>
-
       <div class="checkBox">
-
-        <div class="check">
-          <ul>
-            <li><input type="checkbox">자산조회</li>
-            <li><input type="checkbox">주문조회</li>
-            <li><input type="checkbox">주문하기</li>
-            <li><input type="checkbox">출금조회</li>
-            <li><input type="checkbox">출금하기</li>
-            <li><input type="checkbox">입금조회</li>
-            <li><input type="checkbox">입금하기</li>
-            <li><input type="checkbox">특정 IP에서만 실행 <input type="text" placeholder="IP 주소 입력 (','로 구분하여 여러개의 IP 주소 등록 가능)"></li>
-          </ul>
-        </div>
-
-        <button type="button" class="api_issued"> Open API 발급받기 </button>
-
         <div class="openkey_ex">
-         <p> - 원하는 기능을 선택하여 해당 기능 활용 가능한 Open API Key를 발급받을 수 있습니다. </p>
-         <p> - 발급받으신 Open API Key는 각 Key 별로 특정 서버 IP 주소에서만 동작할 수 있도록 설정 가능하며, 별도로 IP주소를 지정하지 않으시면, IP 주소 제한 없이 Open API 기능을 이용할 수 있습니다. </p>
-         <p> - 기능 선택과 IP 주소 제한 여부에 따라 별도의 Open API Key 발급이 가능하며, 하단의 Open API Key 관리 메뉴를 통해 관리 가능합니다. Open API Key 발급 및 삭제 시에는 2채널 추가 인증 </p>
-         <p> - Secret key는 최초 1회에 한해 발급되며 추가로 확인하실 수 없으니, 발급받으신 Secret key는 반드시 안전한 곳에 별도로 보관하여 주시기 바랍니다. </p>
          <p> - Open API Key 토큰의 유효 기간은 1년이며 연장은 불가합니다. 유효 기간 만료 후 Open API를 계속하여 사용하고자 하시는 분은 추가로 Open API Key를 발급받아 주시기 바랍니다. </p>
          <p> - Open API Key 토큰의 만료 기한은 Open API Key 관리 메뉴 내 Access key 하단 정보를 통해 확인 가능합니다. </p>
-         <p> - 주문하기, 출금하기 API를 사용하시기 위해선 반드시 사용하실 IP 주소를 등록하셔야 하며, 해당 IP 주소로 접속 시에만 Open API를 사용하실 수 있습니다. (2021-05-06 부터 적용) </p>
+         <p> - 출금하기 API를 사용하시기 위해선 반드시 사용하실 IP 주소를 등록하셔야 하며, 해당 IP 주소로 접속 시에만 Open API를 사용하실 수 있습니다. (2021-05-06 부터 적용) </p>
         </div>
-      </div>
 
-      <div class="key_management">
         <h3>Open API Key 관리</h3>
         <table>
           <thead>
             <tr>
               <th>Access Key</th>
-              <th>자산조회</th>
-              <th>주문조회</th>
-              <th>주문하기</th>
-              <th>출금조회</th>
-              <th>입금조회</th>
-              <th>입금하기</th>
               <th>허용 IP주소</th>
               <th>관리</th>
             </tr>
@@ -156,12 +97,6 @@
                 <span>vx76pptZMtiuxZa3guZxNHnf8kO4GYkNnFue5jT0</span>
                 <span class="date">2022.05.04 13:49 만료</span>
               </td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
               <td><button>변경</button></td>
               <td><button>삭제</button></td>
             </tr>
@@ -170,12 +105,6 @@
                 <span>vx76pptZMtiuxZa3guZxNHnf8kO4GYkNnFue5jT0</span>
                 <span class="date">2022.05.04 13:49 만료</span>
               </td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
               <td><button>변경</button></td>
               <td><button>삭제</button></td>
             </tr>
@@ -184,17 +113,136 @@
 
          <div class="key_ex">
           <p class="key_ex_title">&#42; 주의사항</p>
-          <p> - Open API Key 발급 요청량이 많을 경우, 일시적으로 Open API Key 발급이 중지 될 수 있습니다.</p>
-          <p> - Secret key 분실 혹은 유출 시, 기존 Open API Key를 삭제 후 재생성 하여야 합니다.</p>
-          <p> - Open API Key를 절대 타인에게 양도하지 마시기 바랍니다. 그에 따라 발생하는 피해에 대한 책임은 본인에게 있습니다.</p>
-          <p> - 카카오톡 내 연결 끊기를 진행했을시, 고객센터 문의를 통하여 Open API Key 삭제를 요청해 주시기 바랍니다.</p>
-          <p> - Open API Key 미삭제로 발생하는 금전적 손실의 책임은 본인에게 있습니다.</p>
           <p> - Corepay 탈퇴하기를 통해 탈퇴 진행시에는 Open API Key가 삭제됩니다.</p>
          </div>
       </div>
 
+      <div class="key_management">
+        <div class="number">1</div>
+        <h4>CorePay 라이브러리를 추가합니다.</h4>
+        
+        <p>결제가 필요한 곳에 CorePay의 한줄 자바스크립트 라이브러리를 추가합니다.</p>
+        <p>CorePay는 jQuery 기반으로 동작하기 때문에 jQuery 1.0 이상이 반드시 설치되어 있어야 합니다.</p>
+        <p>CorePay 라이브러리 파일이 로드되면 window.IMP 변수에 접근이 가능합니다. </p>
+
+  
+          <pre brush:php class="code01">
+            <code> &lt;script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"&gt; &lt;/script&gt; </code>
+            <code> &lt;script type="text/javascript" src="https://cdn.corepay.kr/js/corepay.payment-1.1.5.js"&gt; &lt;/script&gt; </code>
+          </pre>
 
 
+        <a href="#"><span>CorePay 라이브러리 전체버전 보기</span></a>
+      </div>
+
+      <div class="key_management">
+        <div class="number">2</div>
+        <h4>window.IMP 변수를 초기화합니다. </h4>
+        
+        <p>회원가입 후 생성된 가맹점 식별코드를 이용해서 window.IMP 변수를 초기화합니다. </p>
+        <p>가맹점 식별코드는 관리자 페이지 로그인 한 뒤 시스템설정 - 내 정보에서 확인할 수 있습니다.</p>
+        <p>IMP.init()호출은 최초 1회 이루어져야하며, 페이지 로딩 단계에서 미리 호출해두시면 보다 효과적입니다.</p>
+
+        <pre brush:php class="code02">
+          <code> var IMP = window.IMP; // 생략가능 </code>
+          <code> IMP.init('iamport'); // 'iamport' 대신 부여받은 "가맹점 식별코드"를 사용 </code>
+        </pre>
+      </div>
+
+      <div class="key_management key_m03">
+        <div class="number">3</div>
+        <h4>결제를 요청합니다. </h4>
+        
+        <p>결제 창을 띄워야 하는 페이지에서 아래의 IMP.request_pay({파라메터})함수를 호출합니다.</p>
+        <p>결제에 필요한 아래의 파라메터만 입력하고 함수를 실행하면 관리자 페이지에서 선택한 PG사의 결제 창이 실행됩니다.</p>
+        <p>복수PG를 이용할 경우 pg파라메터의 값만 바꿔넣으면 원하는 PG사의 결제 창으로 결제가 진행됩니다.</p>
+
+        <pre brush:php class="code03">
+          <code>IMP.request_pay({ </code>
+          <code>    pg : 'inicis', // version 1.1.0부터 지원.</code>
+          <code>    pay_method : 'card',</code>
+          <code>    merchant_uid : 'merchant_' + new Date().getTime(),</code>
+          <code>    name : '주문명:결제테스트',</code>
+          <code>    amount : 14000,</code>
+          <code>    buyer_email : 'iamport@siot.do',</code>
+          <code>    buyer_name : '구매자이름',</code>
+          <code>    buyer_tel : '010-1234-5678',</code>
+          <code>    buyer_addr : '서울특별시 강남구 삼성동',</code>
+          <code>    buyer_postcode : '123-456',</code>
+          <code>    m_redirect_url : 'https://www.yourdomain.com/payments/complete'</code>
+          <code>}, function(rsp) {</code>
+          <code>    if ( rsp.success ) {</code>
+          <code>        var msg = '결제가 완료되었습니다.';</code>
+          <code>        msg += '고유ID : ' + rsp.imp_uid;</code>
+          <code>        msg += '상점 거래ID : ' + rsp.merchant_uid;</code>
+          <code>        msg += '결제 금액 : ' + rsp.paid_amount;</code>
+          <code>        msg += '카드 승인번호 : ' + rsp.apply_num;</code>
+          <code>    } else {</code>
+          <code>        var msg = '결제에 실패하였습니다.';</code>
+          <code>        msg += '에러내용 : ' + rsp.error_msg;</code>
+          <code>    }</code>
+          <code>    alert(msg);</code>
+          <code>});</code>
+        </pre>
+
+        <table>
+          <thead>
+            <tr>
+              <th>파라메터명</th>
+              <th>파라메터값</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>PG</td>
+              <td>'kakao':카카오페이, html5_inicis':이니시스(웹표준결제), 'nice':나이스페이, 'jtnet':제이티넷, 'uplus':토스페이먼츠, 'danal':다날, 'payco':페이코, 'syrup':시럽페이, 'paypal':페이팔</td>
+            </tr>
+
+            <tr>
+              <td>pay_method</td>
+              <td>'samsung':삼성페이, 'card':신용카드, 'trans':실시간계좌이체, 'vbank':가상계좌, 'phone':휴대폰소액결제</td>
+            </tr>
+
+            <tr>
+              <td>m_redirect_url</td>
+              <td>모바일 결제시, 결제가 끝나고 랜딩되는 URL을 지정 (카카오페이, 페이코, 다날의 경우는 필요없음. PC와 마찬가지로 callback함수로 결과가 떨어짐)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <a href="#"><span>IMP.request_pay() 파라메터 상세보기</span></a>
+      </div>
+
+      <div class="key_management">
+        <div class="key_m04_left">
+          <div class="number">4</div>
+          <h4>결제결과를 검증합니다. </h4>
+          
+          <p>결제창에서 결제가 완료되면 IMP.request_pay(param, callback) 실행 후</p>
+          <p>callback함수가 호출(PC)되거나 m_redirect_url로 이동(모바일)하게 됩니다.</p>
+          <br />
+          <p>결제정보 위변조 가능성에 대비해 실제 결제된 정보를 imp_uid(아임포트 거래고유번호) </p>
+          <p>또는 merchant_uid(가맹점에서 전달한 주문고유번호)를 활용해</p>
+          <p>가맹점의 서버단에서 REST API로 조회 후 검증할 수 있습니다.</p>
+          <br />
+          <p>REST API로 조회된 결제정보의 status == 'paid'여부를 체크하고 </p>
+          <p>amount 가 가맹점에서 계산한 {실제 주문금액}과 일치하는지 최종 검증이 필요합니다.</p>
+        </div>
+
+        <div class="key_m04_right">
+        </div>
+      </div>
+
+      <div class="key_management key_m05">
+          <div class="number">5</div>
+        <h4>CorePay 결제연동 완료 </h4>
+        
+        <p>웹사이트에서 테스트 결제를 실행할 수 있습니다.</p>
+        <p>PG가입 후 테스트모드를 OFF하고 정보를 입력하면</p>
+        <p>실제로 결제기능을 사용할 수 있습니다.</p>
+        <div class="img"></div>
+      </div>
     </div>
 
   </div>

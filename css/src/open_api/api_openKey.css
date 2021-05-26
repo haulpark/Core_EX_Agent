@@ -4,10 +4,19 @@
 
 html {scroll-behavior: smooth;}
 
-#wrap{width:100%; height:1400px; background-color: #F8F8F8;}
+#wrap{width:100%; height:auto; background-color: #F8F8F8;}
 
 h2{font-family:paybooc-B; font-size:12pt;}
 .title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
+
+pre{
+  color:#fff; background-color: #333;
+}
+
+code{
+  font-family: monospace; 
+  color:#fff;
+}
 
 /* ===================== #headBox ======================== */
 
@@ -124,7 +133,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
 
 /* ===================== #viewBox ======================== */
 .viewBox{
-  width:1400px; height:1240px;
+  width:1400px; height:auto;
   margin:auto; margin-top: 30px;
   background-color: #fff;
   box-shadow: 0 0.5rem 1rem #ccc;
@@ -132,85 +141,131 @@ h2{font-family:paybooc-B; font-size:12pt;}
   overflow:hidden;
 }
 
-h2{font-family:paybooc-B; font-size:12pt;}
-  .title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
+.view_title{width:100%; height:auto; margin:auto;}
+h2{font-family:paybooc-B; float:left; width:200px; line-height:20px; font-size:12pt;}
+
+.api_issued{
+  float:right;
+  width:200px; height:40px; margin-top: 10px;
+  border-radius: 5px; color:#fff; background-color: #4694D1;
+}
+
+.title_line{float:left; width:100%; height:3px; background-color: #f5f6f7; margin-top:5px;}
 
 
   .content{width:100%; height:auto;}
 
   /* ===================== 상단 api 체크 박스 ===================== */
-  .category{width:100%; height:40px; margin-bottom: 24px;}
-    .category > ul {width:100%; height:100%;}
-    .category > ul > li {
-      float:left; width:188px; height:40px; text-align: center;
-      border:2px solid #D4D4D4; margin-right: 10px;
-      border-radius: 5px; line-height: 34px; color:#d4d4d4;
-    }
-    .category > ul > li > a {color:#a1a1a1;}
-    .category > ul > li:first-child{border:2px solid #4694D1;}
-    .category > ul > li:first-child > a {color:#4694D1;}
-
-  .checkBox{width:100%; height:500px; border:1px solid #d4d4d4;}
-
-    .check {width:100%; height:100px; padding:24px; box-sizing: border-box;}
-    .check > ul{width:100%; height:100%;}
-    .check > ul > li{float:left; width:180px; height:50px;}
-    .check > ul > li > input[type="checkbox"] {float:left; margin-right: 10px;}
-
-    .check > ul > li:last-child > input[type="checkbox"] {margin-top:10px;}
-    .check > ul > li:last-child{width:100%; line-height: 30px;}
-    .check > ul > li > input[type="text"] {width:400px; height:30px; margin-left: 10px; border:1px solid #d4d4d4; outline:none; font-size:0.9rem;}
-
-
-  .api_issued{
-      width:200px; height:40px; margin:auto;
-      border-radius: 5px; color:#fff; background-color: #4694D1;}
-
-  .openkey_ex{
-    width:100%; height:auto;
-    margin-top: 60px;
-    padding:0 20px; box-sizing: border-box;
+  .checkBox{
+    width:100%; height:460px; border:1px solid #d4d4d4;
+    padding:24px; box-sizing: border-box; margin-top: 80px;
   }
+
+    .openkey_ex{
+      width:100%; height:auto;
+      margin-top: 10px;
+    }
+
+    h3{font-family:paybooc-B; font-size:11pt; margin-top: 40px;}
+
+    .checkBox > table{width:100%; height:auto; margin-top: 24px;}
+    .checkBox > table > thead > tr > th {
+      height:30px; text-align: center; border:1px solid #d4d4d4;
+      background-color: #d4d4d4;
+    }
+
+    .checkBox > table > thead > tr > th:nth-child(1){width:20%;}
+    .checkBox > table > thead > tr > th:nth-child(2){width:8%;}
+    .checkBox > table > thead > tr > th:nth-child(3){width:8%;}
+    .checkBox > table > thead > tr > th:nth-child(4){width:8%;}
+    .checkBox > table > thead > tr > th:nth-child(5){width:8%;}
+    .checkBox > table > thead > tr > th:nth-child(6){width:8%;}
+    .checkBox > table > thead > tr > th:nth-child(7){width:8%;}
+    .checkBox > table > thead > tr > th:nth-child(8){width:17%;}
+    .checkBox > table > thead > tr > th:nth-child(9){width:5%;}
+
+    .checkBox > table > tbody > tr > td {
+      height:60px; text-align: center; border:1px solid #d4d4d4;
+    }
+
+    .checkBox > table > tbody > tr > td:first-child{text-align: left; padding-left:10px; box-sizing: border-box;}
+    .checkBox > table > tbody > tr > td:first-child > span.date{font-size:0.9rem; color:#8A8A8A;}
+
+    .checkBox > table > tbody > tr > td > button {width:50px; height:28px; font-size:0.9rem; background-color: #fff; border:1px solid #ccc; border-radius: 5px;}
+
+    .key_ex{
+      width:100%; height:auto;
+      margin-top: 20px;
+    }
 
   /* ===================== 하단 api 키 관리 ===================== */
   .key_management{
     width:100%; height:500px; 
     margin-top: 24px;
     border:1px solid #d4d4d4;
-    padding:24px; box-sizing: border-box;
+    padding:44px 24px; box-sizing: border-box;
   }
 
-  h3{font-family:paybooc-B; font-size:11pt;}
+    .number{
+      width:50px; height:50px;
+      margin:auto; margin-bottom: 44px;
+      background-color: #4694D1;
+      font-family: payBooc-B;
+      color:#fff; border-radius: 50%;
+      text-align: center; line-height: 50px;
+      font-size:20pt;
+    }
 
-  .key_management > table{width:100%; height:auto; margin-top: 24px;}
-  .key_management > table > thead > tr > th {
-    height:30px; text-align: center; border:1px solid #d4d4d4;
-    background-color: #d4d4d4;
-  }
+    h4{
+      text-align: center; font-family: payBooc-B;
+      margin-bottom: 24px;
+    }
 
-  .key_management > table > thead > tr > th:nth-child(1){width:20%;}
-  .key_management > table > thead > tr > th:nth-child(2){width:8%;}
-  .key_management > table > thead > tr > th:nth-child(3){width:8%;}
-  .key_management > table > thead > tr > th:nth-child(4){width:8%;}
-  .key_management > table > thead > tr > th:nth-child(5){width:8%;}
-  .key_management > table > thead > tr > th:nth-child(6){width:8%;}
-  .key_management > table > thead > tr > th:nth-child(7){width:8%;}
-  .key_management > table > thead > tr > th:nth-child(8){width:17%;}
-  .key_management > table > thead > tr > th:nth-child(9){width:5%;}
+    .key_management p {text-align: center; font-family: payBooc-M;}
 
-  .key_management > table > tbody > tr > td {
-    height:60px; text-align: center; border:1px solid #d4d4d4;
-  }
+    .key_management a {text-align: center; margin-top: 20px;}
 
-  .key_management > table > tbody > tr > td:first-child{text-align: left; padding-left:10px; box-sizing: border-box;}
-  .key_management > table > tbody > tr > td:first-child > span.date{font-size:0.9rem; color:#8A8A8A;}
+    .code01{
+      width:1000px; margin:auto; margin-top: 20px;
+      line-height: 1.5rem; padding-top: 25px; box-sizing: border-box;
+    }
 
-  .key_management > table > tbody > tr > td > button {width:50px; height:28px; font-size:0.9rem; background-color: #fff; border:1px solid #ccc; border-radius: 5px;}
+    .code02{
+      width:700px; margin:auto; margin-top: 50px;
+      line-height: 1.5rem; padding-top: 25px; box-sizing: border-box;
+    }
 
-  .key_ex{
-    width:100%; height:auto;
-    margin-top: 20px;
-  }
+    .key_m03{height:1200px;}
+
+    .code03{
+      width:700px; margin:auto; margin-top: 50px; margin-bottom: 50px;
+      line-height: 1.5rem; padding-top: 25px; box-sizing: border-box;
+    }
+
+    .key_m03 table {width:95%; height:auto; margin:auto;}
+
+    .key_m03 table thead {font-family: payBooc-B; }
+    .key_m03 table thead tr th{height:30px; padding-left:10px; border:1px solid #d4d4d4; background-color: #f5f6f7;}
+    .key_m03 table thead tr th:first-child{width:15%;}
+
+    .key_m03 table tbody {font-family: payBooc-M;}
+    .key_m03 table tbody tr td{height:40px; font-size:0.9rem; padding-left:10px; border:1px solid #d4d4d4;}
+
+
+    .key_m04_left{float:left; width:60%;}
+    .key_m04_right{
+      float:right; width:40%; height:400px;
+      background-image: url(../../../img/image/api_key_m04_img.png);
+      background-repeat: no-repeat;
+    }
+    
+    .key_m05 {height:320px;}
+
+    
+
+
+
+
  
  /* -------------------- 랩탑 (1024px ~ 1400px) ------------------ */
  @media screen and (min-width: 1024px) and (max-width: 1400px) {
@@ -255,84 +310,5 @@ h2{font-family:paybooc-B; font-size:12pt;}
        line-height: 50px; font-size:11pt;
        text-align: center; color:#333;
      }
-
-  .viewBox{width:100%; height:auto;}
-
-    h2{font-family:paybooc-B; font-size:11pt;}
-
-
-    /* ===================== 상단 메뉴 탭 ===================== */
-
-      .category > ul > li {
-        width:180px; 
-        font-size:0.9rem;
-      }
-
-    /* ===================== 상단 api 체크 박스 ===================== */
-    .checkBox{width:100%; height:540px; border:1px solid #d4d4d4;}
-
-      .check {width:100%; height:100px; padding:24px; box-sizing: border-box;}
-      .check > ul{width:100%; height:100%;}
-      .check > ul > li{float:left; width:180px; height:50px; font-size:0.9rem;}
-      .check > ul > li > input[type="checkbox"] {float:left; margin-right: 10px;}
-
-      .check > ul > li:last-child{width:100%;}
-      .check > ul > li > input[type="text"] {width:400px; margin-left: 10px; border:1px solid #d4d4d4; outline:none; font-size:0.9rem;}
-
-    .btn {
-      width:100%; height:40px; margin:auto; margin-top: 10px;
-    }
-
-      .btn > button{
-        width:180px; height:38px; font-size:0.9rem;
-        border-radius: 5px; color:#fff; background-color: #4694D1;}
-
-    .openkey_ex{
-      width:100%; height:auto;
-      margin-top: 60px; font-size:0.78rem;
-      padding:0 20px; box-sizing: border-box;
-    }
-
-    /* ===================== 하단 api 키 관리 ===================== */
-    .key_management{
-      width:100%; height:480px; 
-      margin-top: 24px;
-      border:1px solid #d4d4d4;
-      padding:24px; box-sizing: border-box;
-    }
-
-    h3{font-family:paybooc-B; font-size:11pt;}
-
-    .key_management > table{width:100%; height:auto; margin-top: 24px;}
-    .key_management > table > thead > tr > th {
-      height:30px; text-align: center; border:1px solid #d4d4d4;
-      background-color: #d4d4d4; font-size:0.9rem;
-    }
-
-    .key_management > table > thead > tr > th:nth-child(1){width:24%;}
-    .key_management > table > thead > tr > th:nth-child(2){width:8%;}
-    .key_management > table > thead > tr > th:nth-child(3){width:8%;}
-    .key_management > table > thead > tr > th:nth-child(4){width:8%;}
-    .key_management > table > thead > tr > th:nth-child(5){width:8%;}
-    .key_management > table > thead > tr > th:nth-child(6){width:8%;}
-    .key_management > table > thead > tr > th:nth-child(7){width:8%;}
-    .key_management > table > thead > tr > th:nth-child(8){width:9%;}
-    .key_management > table > thead > tr > th:nth-child(9){width:9%;}
-
-    .key_management > table > tbody > tr > td {
-      height:60px; text-align: center; border:1px solid #d4d4d4;
-      font-size:0.875rem;
-    }
-
-    .key_management > table > tbody > tr > td:first-child{text-align: left; padding-left:10px; box-sizing: border-box;}
-    .key_management > table > tbody > tr > td:first-child > span.date{font-size:0.8rem; color:#8A8A8A;}
-
-    .key_management > table > tbody > tr > td > button {width:40px; height:25px; font-size:0.8rem; background-color: #fff; border:1px solid #ccc; border-radius: 5px;}
-
-    .key_ex{
-      width:100%; height:auto;
-      margin-top: 20px; font-size:0.78rem;
-    }
-    
 
  }
