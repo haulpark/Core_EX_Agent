@@ -112,11 +112,11 @@ h2{font-family:paybooc-B; font-size:12pt;}
 
   .coinBox{
     width:1000px; height:270px;
-    margin:auto; margin-top: 50px;
+    margin:auto; margin-top: 30px;
   }
 
     .coinBox > table {width:60%; height:auto; margin:auto;}
-    .coinBox > table > tbody > tr > th, td{border:1px solid #fff; height:40px;}
+    .coinBox > table > tbody > tr > th, td{ border:1px solid #fff; height:40px;}
     .coinBox > table > tbody > tr > th{font-family:payBooc-B;}
     .coinBox > table > tbody > tr > td{font-family:payBooc-M; text-align: right;}
 
@@ -125,6 +125,8 @@ h2{font-family:paybooc-B; font-size:12pt;}
     .coinBox > table > tbody > tr > td > span {font-size:1.3rem;}
 
     .coinBox > p {margin:20px 0; font-family: nanum; text-align: center;}
+
+    
 
     .saleBox{width:500px; height:auto; margin:50px auto 0 auto;}
       .saleBox > select{width:360px; height:40px; border:1px solid #D4D4D4; padding-left:10px; box-sizing: border-box; color:#777; outline: 2px solid #4694D1; font-family: nanum;}
@@ -137,7 +139,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
 
   h3{font-family:paybooc-B; font-size:11pt;}
 
-  .coin_list{width:50%; height:auto; margin-top: 10px;}
+  .coin_list{width:50%; height:auto; margin-top: 70px;}
 
     .coin_list > table{
       width:100%; height:auto; font-family: payBook-B; text-align: center;

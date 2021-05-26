@@ -3,12 +3,22 @@
 
 html {scroll-behavior: smooth;}
 
-#wrap{width:100%; height:2140px; min-height:1800px; background-color: #F8F8F8;}
+#wrap{width:100%; height:1600px; background-color: #F8F8F8;}
 
 h2{font-family:paybooc-B; font-size:14pt;}
 .title_line{width:100%; height:3px; background-color: #f5f6f7; margin:20px 0;}
 
 .mob_info_content{display: none;}
+
+.p_indicator{
+  width:180px; height:60px;
+  margin:auto; margin-top: 20px;
+} 
+
+.p_indicator ul{width:100%; height:100%}
+.p_indicator li{float:left; width:20px; font-size:1rem; line-height: 60px;}
+
+.p_indicator a{color:#333;}
 
 /* ===================== #headBox ======================== */
 
@@ -121,59 +131,18 @@ h2{font-family:paybooc-B; font-size:14pt;}
       font-family: payBooc-M; font-weight:normal;
       margin-top: 200px; font-size:14pt; color:#aaa;}
 
-    .detail_content{
+    .info_content{
       width:100%; height:450px; overflow-y:scroll;}
 
-    .detail_content > table {width:100%; height:auto;}
-
-    .detail_content > table > thead > tr > th{
-      height:30px; 
-    }
-
-    .detail_content > table > tbody > tr > td{
-      height:30px; border:1px solid #d4d4d4; text-align: center;
-    }
-
-    .detail_content > table > tbody > tr > td.text_right {text-align: right; padding-right:10px;}
-
-
  /* ===================== #infoBox ======================== */
- #infoBox{
-  width:1400px; height:540px;
-  margin:auto;
-  background-color: #fff;
-  box-shadow: 0 0.5rem 1rem #ccc;
-  padding:36px 44px; box-sizing: border-box;
- }
-
-  .info_content{width:1200px; height:auto; margin:50px auto;}
 
   #periodBox{width:100%; height:auto;}
 
     #periodBox > thead > tr > th {height:32px;}
-    #periodBox > tbody > tr > td {height:32px;}
+    #periodBox > tbody > tr > td {height:32px; }
 
-    #periodBox > thead > tr > th:nth-child(1){width:5%;}
-    #periodBox > thead > tr > th:nth-child(2){width:15%;}
-    #periodBox > thead > tr > th:nth-child(3){width:10%;}
-    #periodBox > thead > tr > th:nth-child(4){width:10%;}
-    #periodBox > thead > tr > th:nth-child(5){width:15%;}
-    #periodBox > thead > tr > th:nth-child(6){width:10%;}
-    #periodBox > thead > tr > th:nth-child(7){width:10%;}
-
-    #periodBox > tbody > tr > td{text-align: center; border:1px solid #D4D4D4; }
-    #periodBox > tbody > tr > td:nth-child(5){text-align: right; padding-right:10px; box-sizing: border-box;}
-
-  .p_indicator{
-    width:180px; height:60px;
-    margin:auto; margin-top: 20px;
-  } 
-
-  .p_indicator ul{width:100%; height:100%}
-  .p_indicator li{float:left; width:20px; font-size:1rem; line-height: 60px;}
-
-  .p_indicator a{color:#333;}
-
+    #periodBox > tbody > tr > td{text-align: center; border:1px solid #D4D4D4; font-size:0.9rem;}
+    #periodBox > tbody > tr > td:nth-child(4){text-align: right; padding-right:10px; box-sizing: border-box;}
 
  /* ===================== #conBox ======================== */
  #conBox{
@@ -348,6 +317,8 @@ h2{font-family:paybooc-B; font-size:14pt;}
         h3{
           margin-top: 180px; font-size:12pt; color:#aaa;}
 
+        .detail_content > .pc_detail{display:none;}
+
     /* ===================== #infoBox ======================== */
     #infoBox{
       width:100%; margin:auto; height:550px;
@@ -486,6 +457,9 @@ h2{font-family:paybooc-B; font-size:14pt;}
 
         h3{
           margin-top: 180px; font-size:12pt; color:#aaa;}
+
+          .detail_content{
+            width:100%; height:400px; overflow-y:scroll;}
 
     /* ===================== #infoBox ======================== */
     #infoBox{
