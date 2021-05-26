@@ -14,6 +14,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
 .mob_coin_list{display:none;}
 
 .sale_popup{
+  display:none;
   position: absolute; z-index:1000;
   width:100%; height:100%;
   background:rgba(0,0,0,0.7);
@@ -78,7 +79,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
         background-repeat: no-repeat;
       }
       
-      h1 > span{
+      h1 > a > span{
         float:left; 
         font-size:20pt; color:#4694D1; 
         line-height: 50px; margin-left: 10px;}
@@ -278,7 +279,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
             background-repeat: no-repeat;
           }
           
-          h1 > span{margin-left: 5px; font-size:12pt;}
+          h1 > a > span{margin-left: 5px; font-size:12pt;}
 
     #gnb{display:none;}
 
@@ -391,7 +392,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
             background-repeat: no-repeat;
           }
           
-          h1 > span{font-size:12pt;}
+          h1 > a > span{font-size:12pt;}
 
 
         #gnb{
@@ -457,7 +458,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
         background-repeat: no-repeat;
       }
       
-      h1 > span{font-size:18pt;}
+      h1 > a > span{font-size:18pt;}
 
 
     #gnb{

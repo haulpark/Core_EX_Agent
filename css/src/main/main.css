@@ -287,7 +287,7 @@ h2{font-family:paybooc-B; font-size:14pt;}
               background-repeat: no-repeat;
             }
             
-            h1 > span{margin-left: 5px; font-size:12pt;}
+            h1 > a > span{margin-left: 5px; font-size:12pt;}
 
     #gnb{display:none;}
 
@@ -423,7 +423,7 @@ h2{font-family:paybooc-B; font-size:14pt;}
               background-repeat: no-repeat;
             }
             
-            h1 > span{font-size:12pt;}
+            h1 > a >span{font-size:12pt;}
 
 
           #gnb{
@@ -559,7 +559,7 @@ h2{font-family:paybooc-B; font-size:14pt;}
         background-repeat: no-repeat;
       }
       
-      h1 > span{font-size:18pt;}
+      h1 > a > span{font-size:18pt;}
 
 
     #gnb{

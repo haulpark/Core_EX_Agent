@@ -38,7 +38,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
       background-repeat: no-repeat;
     }
     
-    h1 > span{
+    h1 > a > span{
       float:left; 
       font-size:20pt; color:#4694D1; 
       line-height: 50px; margin-left: 10px;}
@@ -285,7 +285,7 @@ h2{font-family:paybooc-B; font-size:12pt;}
         background-repeat: no-repeat;
       }
       
-      h1 > span{font-size:18pt;}
+      h1 > a > span{font-size:18pt;}
 
 
     #gnb{
